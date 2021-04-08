@@ -1,0 +1,71 @@
+---
+page_type: resources
+languages:
+  - pdf
+description: |
+  Slidedecks of my speaking engagements
+products:
+  - windows-virtual-desktop
+  - ARM Templates
+  - Bicep Templates
+  - Remote Desktop Services
+  - Azure
+---
+
+#  Slidedecks of my speaking engagements
+This repository contains a subset of the slidedecks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars.
+Feel free to reach out if you have questions in regards to these topics. Happy to connect!
+
+##  List of speaking engagements
+
+📅 2021
+- Dutch DevOps & Github community, Online
+- WVD Tech Fest, Online
+- Wortell LiveStream, Online
+- Nordic Virtual Summit on WVD, Online
+- Azure Thursday february, Online
+- Azure LowLands, Online
+
+📅 2020
+- Azure Immersion Workshop WVD, Online
+- Cloud 8 Virtual Summit, Online
+- BEEMUG event, Online
+- Wortell WVD Live, Online
+- Iceland Azure Community, Online
+- Desktop in the Cloud, Online
+- Workplace Ninja Summit 2020, Online
+- Microsoft Azure Webinar week, Online
+- Microsoft meets community : Windows Virtual Desktop, Online
+- Microsoft Ignite The Tour, Prague
+
+📅 2019
+- Azure User Group, Reykjavik
+- Azure Thursdays, Amsterdam
+- Azure Saturday, Munich
+- Microsoft Ignite | The Tour, Stockholm
+- Microsoft Ignite | The Tour, Johannesburg
+
+📅 2018
+- Microsoft Ignite | The Tour, Berlin
+- Microsoft, Munich
+- Cloud Camp, Dublin
+- Microsoft Ignite, Orlando
+- Azure Saturday, Munich
+- Microsoft TechDays, Helsinki
+- Microsoft TechSummit, Birmingham
+
+📅 2017
+- Microsoft Ignite, Orlando
+- Experts 2 Experts Virtualization Conference, Barcelona
+- Experts 2 Experts Virtualization Conference, Orlando
+
+📅 2016
+- Experts 2 Experts Virtualization Conference, Dublin
+- Bri-Forum, London
+
+📅 2015
+- Bri-Forum, London
+
+📅 2014
+- Experts 2 Experts Virtualization Conference, Brussels
+- Dutch Citrix User Group, Amsterdam
