@@ -1,17 +1,3 @@
----
-page_type: resources
-languages:
-  - pdf
-description: |
-  Slidedecks of my speaking engagements
-products:
-  - windows-virtual-desktop
-  - ARM Templates
-  - Bicep Templates
-  - Remote Desktop Services
-  - Azure
----
-
 #  Slidedecks of my speaking engagements
 This repository contains a subset of the slidedecks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars.
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
