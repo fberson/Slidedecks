@@ -8,6 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
+- Microsoft meets Community: Windows Virtual Desktop | 4th edition!
 - Dutch DevOps & Github community, Online
 - WVD Tech Fest, Online
 - Wortell LiveStream, Online
