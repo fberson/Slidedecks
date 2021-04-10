@@ -20,7 +20,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Azure Immersion Workshop WVD, Online
 - Cloud 8 Virtual Summit, Online
 - BEEMUG event, Online
-- Wortell WVD Live, Online
+- Wortell WVD Live, Online [🎥 <a href = "https://www.youtube.com/watch?v=K_z-j7IQ_JU">On Demand</a>]
 - Iceland Azure Community, Online [🎥 <a href = "https://www.youtube.com/watch?v=88pfZGprl40">On Demand</a>]
 - Desktop in the Cloud, Online [🎥 <a href = "https://www.youtube.com/watch?v=TUWRUfU1EMQ&t=1505s">On Demand</a>]
 - Workplace Ninja Summit 2020, Online
