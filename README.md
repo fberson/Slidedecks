@@ -10,7 +10,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 📅 2021
 - Microsoft meets Community: WVD | 4th edition!
 - Dutch DevOps & Github community, Online
-- WVD Tech Fest, Online
+- WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>]
 - Wortell LiveStream, Online
 - Nordic Virtual Summit on WVD, Online
 - Azure Thursday february, Online
