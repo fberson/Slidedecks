@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
-- Microsoft meets Community: WVD | 4th edition!
+- Microsoft meets Community: WVD | 4th edition!  [🎥 <a href = "https://info.microsoft.com/WE-WVD-WBNR-FY21-04Apr-09-MicrosoftmeetsCommunityWindowsVirtualDesktop4thedition-SRDEM58777_LP02OnDemandRegistration-ForminBody.html?wt.mc_id=AID3017714_QSG_505879">On Demand</a>]
 - Dutch DevOps & Github community, Online
 - WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>]
 - Wortell LiveStream, Online [🎥 <a href = "https://www.youtube.com/watch?v=N2n5XOBrkgw&t=6s">On Demand</a>]
@@ -21,8 +21,8 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Cloud 8 Virtual Summit, Online
 - BEEMUG event, Online
 - Wortell WVD Live, Online
-- Iceland Azure Community, Online
-- Desktop in the Cloud, Online
+- Iceland Azure Community, Online [🎥 <a href = "https://www.youtube.com/watch?v=88pfZGprl40">On Demand</a>]
+- Desktop in the Cloud, Online [🎥 <a href = "https://www.youtube.com/watch?v=TUWRUfU1EMQ&t=1505s">On Demand</a>]
 - Workplace Ninja Summit 2020, Online
 - Microsoft Azure Webinar week, Online
 - Microsoft meets community : Windows Virtual Desktop, Online
