@@ -45,7 +45,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Microsoft TechSummit, Birmingham [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2001%20-%20Shaping%20the%20future%20of%20Remote%20Desktop%20Services%20on%20Azure.pdf"> Slides</a>]
 
 📅 2017
-- Microsoft Ignite, Orlando
+- Microsoft Ignite, Orlando [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2017/2017%20-%2009%20-%20Virtual%20desktops%20in%20the%20cloud%20Experiences%20from%20the%20field.pdf"> Slides</a>]
 - Experts 2 Experts Virtualization Conference, Barcelona
 - Experts 2 Experts Virtualization Conference, Orlando [🎥 <a href = "https://www.youtube.com/watch?v=YbEVvpv9rC0">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2017/2017%20-%2005%20-%20Grab%20a%20Stroopwafel%20while%20we%20watch%20ARM%20do%20an%20automated%20RDS%20deployment%20in%20Azure%20IaaS.pdf"> Slides</a>]
 
