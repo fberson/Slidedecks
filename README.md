@@ -14,7 +14,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Wortell LiveStream, Online [🎥 <a href = "https://www.youtube.com/watch?v=N2n5XOBrkgw&t=6s">On Demand</a>]
 - Nordic Virtual Summit on WVD, Online [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Jump%20Start%20your%20automation%20skills%20for%20WVD.pdf"> Slides</a>]
 - Azure Thursday february, Online [🎥 <a href = "https://www.youtube.com/watch?v=eTwfgq_2fLU&t=2773s">On Demand</a>] [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
-- Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>]
+- Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>] [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
 
 📅 2020
 - Azure Immersion Workshop WVD, Online [🎥 <a href = "https://www.youtube.com/watch?v=iKsRoJ2-ses&t=2s">Promo video</a>]
