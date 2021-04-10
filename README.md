@@ -17,7 +17,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>]
 
 📅 2020
-- Azure Immersion Workshop WVD, Online
+- Azure Immersion Workshop WVD, Online [🎥 <a href = "https://www.youtube.com/watch?v=iKsRoJ2-ses&t=2s">Promo video</a>]
 - Cloud 8 Virtual Summit, Online
 - BEEMUG event, Online
 - Wortell WVD Live, Online [🎥 <a href = "https://www.youtube.com/watch?v=K_z-j7IQ_JU">On Demand</a>]
