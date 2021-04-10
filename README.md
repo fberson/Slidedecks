@@ -36,13 +36,13 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Microsoft Ignite | The Tour, Johannesburg [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2019/2019%20-%2001%20-%20Become%20an%20ARM%20hero%20and%20deploy%20RDS%20on%20Azure%20in%20under%2030%20minutes.pdf"> Slides</a>]
 
 📅 2018
-- Microsoft Ignite | The Tour, Berlin
+- Microsoft Ignite | The Tour, Berlin [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2001%20-%20Become%20an%20ARM%20hero%20and%20deploy%20RDS%20on%20Azure%20in%20under%2030%20minutes.pdf"> Slides</a>]
 - Microsoft, Munich
-- Cloud Camp, Dublin
-- Microsoft Ignite, Orlando
-- Azure Saturday, Munich
-- Microsoft TechDays, Helsinki
-- Microsoft TechSummit, Birmingham
+- Cloud Camp, Dublin [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2010%20-%20RDS%20on%20Azure%20or%20WVD%2C%20Here's%20What%20You%20Need%20to%20Know!.pdf"> Slides</a>]
+- Microsoft Ignite, Orlando [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2008%20-%20Measuring%20perceived%20end%20user%20experience%20in%20RDS%2C%20and%20why%20you%20should%20care.pdf"> Slides</a>]
+- Azure Saturday, Munich [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2007%20-%20Top%207%20facts%20in%20comparing%20RDS%20on%20Azure%20IaaS%20vs%20Azure%20PaaS.pdf"> Slides</a>]
+- Microsoft TechDays, Helsinki [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2003%20-%20Shaping%20the%20future%20of%20Remote%20Desktop%20on%20Azure.pdf"> Slides</a>]
+- Microsoft TechSummit, Birmingham [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2018/2018%20-%2001%20-%20Shaping%20the%20future%20of%20Remote%20Desktop%20Services%20on%20Azure.pdf"> Slides</a>]
 
 📅 2017
 - Microsoft Ignite, Orlando
