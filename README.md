@@ -21,7 +21,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Cloud 8 Virtual Summit, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2020/2020%20-%2011%20-%20Work%20hard%2C%20Play%20hard%20Powerful%20Desktops%20in%20Azure.pdf"> Slides</a>]
 - BEEMUG event, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2020/2020%20-%2010%20-%20Automating%20WVD%20using%20ARM%2CREST%20and%20PS.pdf"> Slides</a>]
 - Wortell WVD Live, Online [🎥 <a href = "https://www.youtube.com/watch?v=K_z-j7IQ_JU">On Demand</a>]
-- Iceland Azure Community, Online [🎥 <a href = "https://www.youtube.com/watch?v=88pfZGprl40">On Demand</a>]
+- Iceland Azure Community, Online [🎥 <a href = "https://www.youtube.com/watch?v=88pfZGprl40">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2020/2021%20-%2002%20-%20Project%20Bicep%200.2.pdf"> Slides</a>]
 - Desktop in the Cloud, Online [🎥 <a href = "https://www.youtube.com/watch?v=TUWRUfU1EMQ&t=1505s">On Demand</a>]
 - Workplace Ninja Summit 2020, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2020/2020%20-%2009%20-%20Windows%20Virtual%20Desktop%2C%20Advanced%20scenarios%20%26%20lessons%20learned!.pdf"> Slides</a>]
 - Microsoft Azure Webinar week, Online
