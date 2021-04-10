@@ -11,10 +11,10 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Microsoft meets Community: WVD | 4th edition!
 - Dutch DevOps & Github community, Online
 - WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>]
-- Wortell LiveStream, Online
+- Wortell LiveStream, Online [🎥 <a href = "https://www.youtube.com/watch?v=N2n5XOBrkgw&t=6s">On Demand</a>]
 - Nordic Virtual Summit on WVD, Online
-- Azure Thursday february, Online
-- Azure LowLands, Online
+- Azure Thursday february, Online [🎥 <a href = "https://www.youtube.com/watch?v=eTwfgq_2fLU&t=2773s">On Demand</a>]
+- Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>]
 
 📅 2020
 - Azure Immersion Workshop WVD, Online
