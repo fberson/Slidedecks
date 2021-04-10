@@ -8,13 +8,13 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
-- Microsoft meets Community: WVD | 4th edition!  [🎥 <a href = "https://info.microsoft.com/WE-WVD-WBNR-FY21-04Apr-09-MicrosoftmeetsCommunityWindowsVirtualDesktop4thedition-SRDEM58777_LP02OnDemandRegistration-ForminBody.html?wt.mc_id=AID3017714_QSG_505879">On Demand</a>] [📊 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field.pdf"> Slides</a>]
-- Dutch DevOps & Github community, Online [📊 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Project%20Bicep%20ARM%20Templates%20reloaded.pdf"> Slides</a>]
-- WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>] [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field!.pdf"> Slides</a>]
+- Microsoft meets Community: WVD | 4th edition!  [🎥 <a href = "https://info.microsoft.com/WE-WVD-WBNR-FY21-04Apr-09-MicrosoftmeetsCommunityWindowsVirtualDesktop4thedition-SRDEM58777_LP02OnDemandRegistration-ForminBody.html?wt.mc_id=AID3017714_QSG_505879">On Demand</a>] [💾 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field.pdf"> Slides</a>]
+- Dutch DevOps & Github community, Online [💾 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Project%20Bicep%20ARM%20Templates%20reloaded.pdf"> Slides</a>]
+- WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field!.pdf"> Slides</a>]
 - Wortell LiveStream, Online [🎥 <a href = "https://www.youtube.com/watch?v=N2n5XOBrkgw&t=6s">On Demand</a>]
-- Nordic Virtual Summit on WVD, Online [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Jump%20Start%20your%20automation%20skills%20for%20WVD.pdf"> Slides</a>]
-- Azure Thursday february, Online [🎥 <a href = "https://www.youtube.com/watch?v=eTwfgq_2fLU&t=2773s">On Demand</a>] [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
-- Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>] [📊 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
+- Nordic Virtual Summit on WVD, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Jump%20Start%20your%20automation%20skills%20for%20WVD.pdf"> Slides</a>]
+- Azure Thursday february, Online [🎥 <a href = "https://www.youtube.com/watch?v=eTwfgq_2fLU&t=2773s">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
+- Azure LowLands, Online [🎥 <a href = "https://youtu.be/0uIsu0kAFZY?t=11568">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2001%20-%20Empowering%20ARM%20and%20JSON%20with%20Project%20Bicep.pdf"> Slides</a>]
 
 📅 2020
 - Azure Immersion Workshop WVD, Online [🎥 <a href = "https://www.youtube.com/watch?v=iKsRoJ2-ses&t=2s">Promo video</a>]
