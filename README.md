@@ -29,7 +29,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Microsoft Ignite The Tour, Prague [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2020/2020%20-%2002%20-%20Windows%20Virtual%20Desktop%2C%20Lessons%20Learned%20from%20the%20Field!.pdf"> Slides</a>]
 
 📅 2019
-- Azure User Group, Reykjavik
+- Azure User Group, Reykjavik [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2019/2019%20-%2012%20-%20Jump%20start%20your%20Windows%20Virtual%20Desktop%20deployment.pdf"> Slides</a>]
 - Azure Thursdays, Amsterdam [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2019/2019%20-%2009%20-%20Application%20and%20Desktop%20delivery%20on%20Azure%2C%20from%20cool%20to%20awesome!.pdf"> Slides</a>]
 - Azure Saturday, Munich [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2019/2019%20-%2005%20-%20Windows%20Virtual%20Desktop%2C%20the%20Future%20of%20App%20and%20Desktop%20Delivery%20on%20Azure!.pdf"> Slides</a>]
 - Microsoft Ignite | The Tour, Stockholm [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2019/2019%20-%2004%20-%20Windows%20Virtual%20Desktop%2C%20the%20Future%20of%20App%20and%20Desktop%20Delivery%20on%20Azure!.pdf"> Slides</a>]
