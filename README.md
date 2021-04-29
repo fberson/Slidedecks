@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
-- Detron kennisavond [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2005%20-%20ARM%20Workout%20with%20Project%20Bicep.pdf"> Slides</a>]
+- Detron kennisavond [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Project%20Bicep%20-%20ARM%20Templates%20reloaded!.pdf"> Slides</a>]
 - Microsoft meets Community: WVD 4th!  [🎥 <a href = "https://www.youtube.com/watch?v=_dhtSMawX84">On Demand</a>] [💾 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field.pdf"> Slides</a>]
 - Dutch DevOps & Github community, Online [💾 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Project%20Bicep%20ARM%20Templates%20reloaded.pdf"> Slides</a>]
 - WVD Tech Fest, Online [🎥 <a href = "https://www.youtube.com/watch?v=tMIUlTou3bc&t=1s">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2002%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field!.pdf"> Slides</a>]
