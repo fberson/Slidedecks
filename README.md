@@ -8,6 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
+- US Azure Virtual Desktop User Group [🎥 <a href = "https://www.youtube.com/watch?v=J7spf0wSrAg">On Demand</a>]
 - Azure meetup Oslo [🎥 <a href = "https://www.youtube.com/watch?v=Cvbr-pI6G0o">On Demand</a>]
 - Cloud Eight Virtual Summit [💾 <a href = https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2006%20-Windows%20Virtual%20Desktop%20does%20not%20use%20port%203389%2C%20so%20we%E2%80%99re%20secure%E2%80%A6.%20right.pdf> Slides</a>]
 - Belgium WVD User Group 
