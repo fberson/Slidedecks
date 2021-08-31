@@ -8,6 +8,11 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021
+- Azure User Group Norway [🎥 <a href = "https://www.youtube.com/watch?v=PqDNA-0nqj0">On Demand</a>]
+- US Azure Virtual Desktop User Group [🎥 <a href = "https://www.youtube.com/watch?v=J7spf0wSrAg">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2008%20-%20Flexing%20your%20Infrastructure%20as%20Code%20muscles%20with%20Bicep%20Templates!.pdf"> Slides</a>]
+- Azure meetup Oslo [🎥 <a href = "https://www.youtube.com/watch?v=Cvbr-pI6G0o">On Demand</a>]
+- Cloud Eight Virtual Summit [💾 <a href = https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2006%20-Windows%20Virtual%20Desktop%20does%20not%20use%20port%203389%2C%20so%20we%E2%80%99re%20secure%E2%80%A6.%20right.pdf> Slides</a>]
+- Belgium WVD User Group 
 - TechNine event [💾 <a href = https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2005%20-%20Project%20Bicep%20-%20ARM%20Templates%20Reloaded!.pdf> Slides</a>]
 - Detron kennisavond [💾 <a href = https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20ARM%20Workout%20with%20Project%20Bicep.pdf> Slides</a>]
 - Microsoft meets Community: WVD 4th!  [🎥 <a href = "https://www.youtube.com/watch?v=_dhtSMawX84">On Demand</a>] [💾 <a href="https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2004%20-%20Empowering%20your%20WVD%20deployments%20with%20Project%20Bicep%2C%20experiences%20from%20the%20field.pdf"> Slides</a>]
