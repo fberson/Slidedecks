@@ -1,4 +1,4 @@
-#  Slide decks of my speaking engagements
+#  Slide decks and video recordings of my speaking engagements
 This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (WVD), Remote Desktop Services (RDS), Bicep and ARM Tenmplates and much more!
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
