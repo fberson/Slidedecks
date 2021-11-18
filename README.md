@@ -1,5 +1,5 @@
-#  Slide decks of my speaking engagements
-This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topicss discussed in these sessions are Windows Virtual Desktop (WVD), Remote Desktop Services (RDS), Bicep and ARM Tenmplates.
+#  Slide decks and video recordings of my speaking engagements
+This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (WVD), Remote Desktop Services (RDS), Bicep and ARM Tenmplates and much more!
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
 <img align="right" src="https://1.bp.blogspot.com/-4cExxWC9Wpo/YG71Y14tmLI/AAAAAAAAFMs/bhXFN9oT9_Ew2RTB71kwsZ2lY93bauHeACLcBGAsYHQ/s320/ninja-transparent.png">
@@ -10,7 +10,8 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 📅 2021 
-- Workplace Ninja Virtual Edition 2021 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2008%20-%20Azure%20Virtual%20Desktop%20as%20a%20gaming%20console%20-%20present.pdf"> Slides</a>]
+- Cloud Summit 2021 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%20%2009%20-%20Understanding%20all%20security%20aspects%20of%20Azure%20Virtual%20Desktop.pdf"> Slides</a>]
+- Workplace Ninja Virtual Edition 2021 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2008%20-%20Azure%20Virtual%20Desktop%20as%20a%20gaming%20console%20-%20present.pdf"> Slides session 1</a>] 💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2008%20-%20Understanding%20all%20security%20aspects%20of%20Azure%20Virtual%20Desktop.pdf"> Slides session 2</a>]
 - Azure User Group Norway [🎥 <a href = "https://www.youtube.com/watch?v=PqDNA-0nqj0">On Demand</a>]
 - US Azure Virtual Desktop User Group [🎥 <a href = "https://www.youtube.com/watch?v=J7spf0wSrAg">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2008%20-%20Flexing%20your%20Infrastructure%20as%20Code%20muscles%20with%20Bicep%20Templates!.pdf"> Slides</a>]
 - Azure meetup Oslo [🎥 <a href = "https://www.youtube.com/watch?v=Cvbr-pI6G0o">On Demand</a>]
