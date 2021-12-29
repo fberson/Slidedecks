@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2021 
-- Tech Festive Calendar 2021, Online [🎥 <a href = "https://www.youtube.com/watch?v=NmVbq6xLAuc">On Demand</a>] [💾 <a href = ""> Slides</a>] 
+- Tech Festive Calendar 2021, Online [🎥 <a href = "https://www.youtube.com/watch?v=NmVbq6xLAuc">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2012%20-%20Twelve%20features%20of%20Bicep%20%E2%80%93%20Christmas%20edition.pdf"> Slides</a>] 
 - Liquit & AVD webinar, online  [🎥 <a href = "https://www.youtube.com/watch?v=t_Yy0l9Acdk">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2012%20-%20Empowering%20AVD%20Image%20deployments%20with%20Azure%20Pipelines%20and%20Liquit!.pdf
 "> Slides</a>] 
 - AVD TechFest Winter edition 2021, online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2011%20-%20AVD%20TechFest%202021%20Winter%20Edition.pdf"> Slides</a>]
