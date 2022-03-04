@@ -6,6 +6,8 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 ##  List of speaking engagements
+📅 2022
+- Azure User Group Iceland, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2003%20-%20Infrastructure%20as%20Code%20with%20Bicep%20-%20on%20tour!.pdf"> Slides</a>] 
 
 📅 2021 
 - Tech Festive Calendar 2021, Online [🎥 <a href = "https://www.youtube.com/watch?v=NmVbq6xLAuc">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2012%20-%20Twelve%20features%20of%20Bicep%20%E2%80%93%20Christmas%20edition.pdf"> Slides</a>] 
