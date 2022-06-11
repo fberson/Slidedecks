@@ -1,11 +1,16 @@
 #  Slide decks and video recordings of my speaking engagements
-This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (WVD), Remote Desktop Services (RDS), Bicep and ARM Templates and much more!
+This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (AVD), Remote Desktop Services (RDS), Bicep and ARM Templates and much more!
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
 <img align="right" src="https://1.bp.blogspot.com/-4cExxWC9Wpo/YG71Y14tmLI/AAAAAAAAFMs/bhXFN9oT9_Ew2RTB71kwsZ2lY93bauHeACLcBGAsYHQ/s320/ninja-transparent.png">
 
 
 ##  List of speaking engagements
+📅 2022
+
+
+- MC2MC Community event, Online [🎥 <a href = "https://www.youtube.com/watch?v=iywiMbNZu1o">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2003%20-%20Infrastructure%20as%20Code%20with%20Bicep%20-%20on%20tour%20-%20MC2MC.pdf"> Slides</a>] 
+- Azure User Group Iceland, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2003%20-%20Infrastructure%20as%20Code%20with%20Bicep%20-%20on%20tour!.pdf"> Slides</a>] 
 
 📅 2021 
 - Tech Festive Calendar 2021, Online [🎥 <a href = "https://www.youtube.com/watch?v=NmVbq6xLAuc">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2021/2021%20-%2012%20-%20Twelve%20features%20of%20Bicep%20%E2%80%93%20Christmas%20edition.pdf"> Slides</a>] 
