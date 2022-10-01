@@ -7,6 +7,9 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 ##  List of speaking engagements
 📅 2022
+- Experts Live 2022 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2009%20-%20Bicep%20-%20Infrastructure%20as%20Code%20Masterclass%20-%20part%20I.pdf"> Slides Part I</a>]
+- Experts Live 2022 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2009%20-%20Bicep%20-%20Infrastructure%20as%20Code%20Masterclass%20-%20part%20II.pdf"> Slides Part II</a>]
+- Streaming Clouds, Online [🎥 <a href = https://www.youtube.com/watch?v=C-VAXvEFCkw">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2009%20-%20My%20journey%20to%20Bicep%20and%20how%20you%20can%20get%20started!.pdf"> Slides</a>] 
 - Scottish Summit 2022, Glasgow [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2006%20%E2%80%93%20Infrastructure%20as%20Code%20Masterclass.pdf"> Slides</a>]
 - MC2MC Community event, Online [🎥 <a href = "https://www.youtube.com/watch?v=iywiMbNZu1o">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2003%20-%20Infrastructure%20as%20Code%20with%20Bicep%20-%20on%20tour%20-%20MC2MC.pdf"> Slides</a>] 
 - Azure User Group Iceland, Online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2003%20-%20Infrastructure%20as%20Code%20with%20Bicep%20-%20on%20tour!.pdf"> Slides</a>] 
