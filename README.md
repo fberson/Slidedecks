@@ -6,6 +6,9 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 ##  List of speaking engagements
+📅 2023
+- Azure USer Group Sweden, Online [🎥 <a href = "https://www.youtube.com/watch?v=qHcZ7RGB1M4">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2001%20-%20Azure%20User%20Group%20Sweden%20-%20Infrastructure%20as%20Code%20with%20Bicep%20on%20tour!.pdf"> Slides</a>] 
+
 📅 2022
 - Experts Live 2022 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2009%20-%20Bicep%20-%20Infrastructure%20as%20Code%20Masterclass%20-%20part%20I.pdf"> Slides Part I</a>]
 - Experts Live 2022 [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2022/2022%20-%2009%20-%20Bicep%20-%20Infrastructure%20as%20Code%20Masterclass%20-%20part%20II.pdf"> Slides Part II</a>]
