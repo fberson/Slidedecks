@@ -1,0 +1,2244 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "languageVersion": "2.1-experimental",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+    "_EXPERIMENTAL_FEATURES_ENABLED": [
+      "Extensibility",
+      "MicrosoftGraph Preview"
+    ],
+    "_generator": {
+      "name": "bicep",
+      "version": "0.21.1.54444",
+      "templateHash": "1757849231070447656"
+    }
+  },
+  "parameters": {
+    "azureSubscriptionID": {
+      "type": "securestring"
+    },
+    "azureADTenantID": {
+      "type": "securestring"
+    },
+    "adminObjectID": {
+      "type": "securestring"
+    },
+    "principalID": {
+      "type": "securestring"
+    },
+    "resourceGroupProdPrefix": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-DEMO-P-"
+    },
+    "resourceGroupAccPrefix": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-DEMO-A-"
+    },
+    "resourceGroupPostfix": {
+      "type": "string",
+      "defaultValue": "-RG"
+    },
+    "AVDbackplanelocation": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    },
+    "hostPoolType": {
+      "type": "string",
+      "defaultValue": "pooled"
+    },
+    "loadBalancerType": {
+      "type": "string",
+      "defaultValue": "BreadthFirst"
+    },
+    "logAnalyticsWorkspaceName": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-DEMO-3"
+    },
+    "logAnalyticsWorkspaceSku": {
+      "type": "string",
+      "defaultValue": "pergb2018"
+    },
+    "hostpoolFriendlyName": {
+      "type": "string",
+      "defaultValue": "Hostpool with AVD Bicep Applications"
+    },
+    "appgroupDesktopFriendlyName": {
+      "type": "string",
+      "defaultValue": "AppGroup with AVD Bicep Desktop"
+    },
+    "appgroupRemoteAppFriendlyName": {
+      "type": "string",
+      "defaultValue": "AppGroup with AVD Bicep Applications"
+    },
+    "workspaceProdFriendlyName": {
+      "type": "string",
+      "defaultValue": "AVD Bicep Production"
+    },
+    "workspaceAccFriendlyName": {
+      "type": "string",
+      "defaultValue": "AVD Bicep Acceptance"
+    },
+    "hostpoolNameProd": {
+      "type": "string",
+      "defaultValue": "BICEP-P-AVD-HP"
+    },
+    "appgroupNameProd": {
+      "type": "string",
+      "defaultValue": "BICEP-P-AVD-HP-AG"
+    },
+    "workspaceNameProd": {
+      "type": "string",
+      "defaultValue": "BICEP-P-AVD-HP-WS"
+    },
+    "preferredAppGroupTypeProd": {
+      "type": "string",
+      "defaultValue": "Desktop"
+    },
+    "hostpoolNameAcc": {
+      "type": "string",
+      "defaultValue": "BICEP-A-AVD-HP"
+    },
+    "appgroupNameAcc": {
+      "type": "string",
+      "defaultValue": "BICEP-A-AVD-HP-AG"
+    },
+    "workspaceNameAcc": {
+      "type": "string",
+      "defaultValue": "BICEP-A-AVD-HP-WS"
+    },
+    "preferredAppGroupTypeAcc": {
+      "type": "string",
+      "defaultValue": "Desktop"
+    },
+    "vnetName": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-VNET"
+    },
+    "vnetaddressPrefix": {
+      "type": "string",
+      "defaultValue": "10.80.0.0/16"
+    },
+    "subnet1Prefix": {
+      "type": "string",
+      "defaultValue": "10.80.10.0/24"
+    },
+    "subnet1Name": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-SUBNET-PROD"
+    },
+    "subnet2Prefix": {
+      "type": "string",
+      "defaultValue": "10.80.20.0/24"
+    },
+    "subnet2Name": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-SUBNET-ACC"
+    },
+    "dnsServer": {
+      "type": "string",
+      "defaultValue": "10.50.1.4"
+    },
+    "createPeering": {
+      "type": "bool",
+      "defaultValue": true
+    },
+    "remoteVnetName": {
+      "type": "string",
+      "defaultValue": "WE-P-VNET-01"
+    },
+    "remoteVnetRg": {
+      "type": "string",
+      "defaultValue": "WE-P-RG-NETWORK"
+    },
+    "vmProdPrefix": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-VM-TEMPLATE-"
+    },
+    "adminUserName": {
+      "type": "string",
+      "defaultValue": "localadmin"
+    },
+    "adminPassword": {
+      "type": "securestring"
+    },
+    "vmHostname1": {
+      "type": "string",
+      "defaultValue": "AVD-T-1"
+    },
+    "vmSize1": {
+      "type": "string",
+      "defaultValue": "Standard_D4s_v3"
+    },
+    "sigName": {
+      "type": "string",
+      "defaultValue": "BICEP_AVD_AIB"
+    },
+    "imagePublisher": {
+      "type": "string",
+      "defaultValue": "AVDBicep"
+    },
+    "imageDefinitionName": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-ID"
+    },
+    "imageOffer": {
+      "type": "string",
+      "defaultValue": "Windows10-AVD"
+    },
+    "imageSKU": {
+      "type": "string",
+      "defaultValue": "20h2-evd"
+    },
+    "vmOffer": {
+      "type": "string",
+      "defaultValue": "windows-11"
+    },
+    "vmOSDiskSize": {
+      "type": "int",
+      "defaultValue": 127
+    },
+    "vmSku": {
+      "type": "string",
+      "defaultValue": "win11-22h2-avd"
+    },
+    "vmVersion": {
+      "type": "string",
+      "defaultValue": "latest"
+    },
+    "vmPublisher": {
+      "type": "string",
+      "defaultValue": "MicrosoftWindowsDesktop"
+    },
+    "userAssignedIdentity": {
+      "type": "string",
+      "defaultValue": "BICEP-AVD-DEMO-IDENTITY"
+    },
+    "roleNameNetwork": {
+      "type": "string",
+      "defaultValue": "VvetReader"
+    },
+    "roleNameGalleryImage": {
+      "type": "string",
+      "defaultValue": "GalleryReadWrite"
+    },
+    "vmSizeAIB": {
+      "type": "string",
+      "defaultValue": "Standard_D16s_v3"
+    },
+    "storageaccountlocation1": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    },
+    "storageaccountName1": {
+      "type": "string",
+      "defaultValue": "bicepavdsaaib"
+    },
+    "storageaccountkind1": {
+      "type": "string",
+      "defaultValue": "StorageV2"
+    },
+    "storgeaccountglobalRedundancy1": {
+      "type": "string",
+      "defaultValue": "Standard_LRS"
+    },
+    "storageaccountlocation2": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    },
+    "storageaccountName2": {
+      "type": "string",
+      "defaultValue": "bicepavdsaprof"
+    },
+    "storageaccountkind2": {
+      "type": "string",
+      "defaultValue": "FileStorage"
+    },
+    "storgeaccountglobalRedundancy2": {
+      "type": "string",
+      "defaultValue": "Premium_LRS"
+    },
+    "fileshareFolderName1": {
+      "type": "string",
+      "defaultValue": "aibsoftware"
+    },
+    "fileshareFolderName2": {
+      "type": "string",
+      "defaultValue": "aibscripts"
+    },
+    "fileshareFolderName3": {
+      "type": "string",
+      "defaultValue": "profilecontainers"
+    },
+    "keyVaultName": {
+      "type": "string",
+      "defaultValue": "[format('kv-{0}', utcNow())]"
+    },
+    "keyVaultLocation": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    },
+    "secretNameDomainJoin": {
+      "type": "string",
+      "defaultValue": "AVD-domain-join"
+    },
+    "secretValueDomainJoin": {
+      "type": "securestring"
+    },
+    "secretNameLocalAdminPassword": {
+      "type": "string",
+      "defaultValue": "AVD-local-admin"
+    },
+    "secretValueLocalAdminPassword": {
+      "type": "securestring"
+    },
+    "scalehostPoolType": {
+      "type": "string",
+      "defaultValue": "Pooled"
+    },
+    "scalelocation": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    },
+    "scalescalingPlanName": {
+      "type": "string",
+      "defaultValue": "bicep-avd-scale-demo"
+    },
+    "scaleschedules": {
+      "type": "array",
+      "defaultValue": [
+        {
+          "name": "weekdays_schedule",
+          "daysOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "rampUpStartTime": {
+            "hour": 8,
+            "minute": 0
+          },
+          "rampUpLoadBalancingAlgorithm": "BreadthFirst",
+          "rampUpMinimumHostsPct": 20,
+          "rampUpCapacityThresholdPct": 60,
+          "peakStartTime": {
+            "hour": 9,
+            "minute": 0
+          },
+          "peakLoadBalancingAlgorithm": "DepthFirst",
+          "rampDownStartTime": {
+            "hour": 18,
+            "minute": 0
+          },
+          "rampDownLoadBalancingAlgorithm": "DepthFirst",
+          "rampDownMinimumHostsPct": 10,
+          "rampDownCapacityThresholdPct": 90,
+          "rampDownWaitTimeMinutes": 30,
+          "rampDownStopHostsWhen": "ZeroSessions",
+          "rampDownNotificationMessage": "You will be logged off in 30 min. Make sure to save your work.",
+          "offPeakStartTime": {
+            "hour": 20,
+            "minute": 0
+          },
+          "offPeakLoadBalancingAlgorithm": "DepthFirst",
+          "rampDownForceLogoffUsers": true
+        }
+      ]
+    },
+    "scaletimeZone": {
+      "type": "string",
+      "defaultValue": "W. Europe Standard Time"
+    },
+    "defaultLocation": {
+      "type": "string",
+      "defaultValue": "westeurope"
+    }
+  },
+  "variables": {
+    "vnName1": "[format('{0}{1}', parameters('vmProdPrefix'), parameters('vmHostname1'))]",
+    "userAssignedIdentityID": "[format('/subscriptions/{0}/resourcegroups/BICEP-AVD-DEMO-P-TEMPLATE-IMAGE-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{1}', parameters('azureSubscriptionID'), parameters('userAssignedIdentity'))]",
+    "AVDbackplanes": [
+      {
+        "hostpoolName": "[parameters('hostpoolNameProd')]",
+        "hostpoolFriendlyName": "[parameters('hostpoolFriendlyName')]",
+        "appgroupName": "[parameters('appgroupNameProd')]",
+        "appgroupDesktopFriendlyName": "[parameters('appgroupDesktopFriendlyName')]",
+        "appgroupRemoteAppFriendlyName": "[parameters('appgroupRemoteAppFriendlyName')]",
+        "workspaceName": "[parameters('workspaceNameProd')]",
+        "workspaceNameFriendlyName": "[parameters('workspaceProdFriendlyName')]",
+        "preferredAppGroupType": "[parameters('preferredAppGroupTypeProd')]",
+        "AVDbackplanelocation": "[parameters('AVDbackplanelocation')]",
+        "hostPoolType": "[parameters('hostPoolType')]",
+        "enableValiatioMode": false,
+        "loadBalancerType": "[parameters('loadBalancerType')]",
+        "createRemoteAppHostpool": true,
+        "maxSessionLimit": 10
+      },
+      {
+        "hostpoolName": "[parameters('hostpoolNameAcc')]",
+        "hostpoolFriendlyName": "[parameters('hostpoolFriendlyName')]",
+        "appgroupName": "[parameters('appgroupNameAcc')]",
+        "appgroupDesktopFriendlyName": "[parameters('appgroupDesktopFriendlyName')]",
+        "appgroupRemoteAppFriendlyName": "[parameters('appgroupRemoteAppFriendlyName')]",
+        "workspaceName": "[parameters('workspaceNameAcc')]",
+        "workspaceNameFriendlyName": "[parameters('workspaceAccFriendlyName')]",
+        "preferredAppGroupType": "[parameters('preferredAppGroupTypeAcc')]",
+        "AVDbackplanelocation": "[parameters('AVDbackplanelocation')]",
+        "hostPoolType": "[parameters('hostPoolType')]",
+        "enableValiatioMode": true,
+        "loadBalancerType": "[parameters('loadBalancerType')]",
+        "createRemoteAppHostpool": true,
+        "maxSessionLimit": 10
+      }
+    ]
+  },
+  "resources": {
+    "rgnw": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}NETWORK{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgtvm": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}TEMPLATE-VM{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgAVDp": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}BACKPLANE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgAVDa": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}BACKPLANE{1}', parameters('resourceGroupAccPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgAVDphost": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}AVD-HOSTS{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgAVDahost": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}AVD-HOSTS{1}', parameters('resourceGroupAccPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgmon": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}MONITORING{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgfs": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}FILESERVICES{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgkv": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}KEYVAULT{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgts": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}TEMPLATESPECS{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "rgti": {
+      "existing": true,
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}TEMPLATE-IMAGE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]"
+    },
+    "rgsp": {
+      "type": "Microsoft.Resources/resourceGroups",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}SCALE-PLANS{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "location": "[parameters('defaultLocation')]"
+    },
+    "vnetdef": {
+      "type": "Microsoft.Authorization/roleDefinitions",
+      "apiVersion": "2022-05-01-preview",
+      "name": "[guid(parameters('roleNameNetwork'))]",
+      "properties": {
+        "roleName": "[parameters('roleNameNetwork')]",
+        "description": "Custom role for network read",
+        "permissions": [
+          {
+            "actions": [
+              "Microsoft.Network/virtualNetworks/read",
+              "Microsoft.Network/virtualNetworks/subnets/join/action"
+            ]
+          }
+        ],
+        "assignableScopes": [
+          "[subscription().id]"
+        ]
+      }
+    },
+    "vnetass": {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "apiVersion": "2022-04-01",
+      "name": "[guid(subscriptionResourceId('Microsoft.Resources/resourceGroups', format('{0}NETWORK{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))))]",
+      "properties": {
+        "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', guid(parameters('roleNameNetwork')))]",
+        "principalId": "[parameters('principalID')]"
+      },
+      "dependsOn": [
+        "rgnw",
+        "vnetdef"
+      ]
+    },
+    "AVDbackplanedeploy": {
+      "copy": {
+        "name": "AVDbackplanedeploy",
+        "count": "[length(variables('AVDbackplanes'))]"
+      },
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "[format('{0}-deploy', variables('AVDbackplanes')[copyIndex()].hostpoolName)]",
+      "resourceGroup": "[format('{0}BACKPLANE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "hostpoolName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].hostpoolName]"
+          },
+          "hostpoolFriendlyName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].hostpoolFriendlyName]"
+          },
+          "appgroupName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].appgroupName]"
+          },
+          "appgroupDesktopFriendlyName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].appgroupDesktopFriendlyName]"
+          },
+          "appgroupRemoteAppFriendlyName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].appgroupRemoteAppFriendlyName]"
+          },
+          "workspaceName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].workspaceName]"
+          },
+          "workspaceNameFriendlyName": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].workspaceNameFriendlyName]"
+          },
+          "preferredAppGroupType": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].preferredAppGroupType]"
+          },
+          "AVDbackplanelocation": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].AVDbackplanelocation]"
+          },
+          "hostPoolType": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].HostPoolType]"
+          },
+          "enableValiatioMode": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].enableValiatioMode]"
+          },
+          "loadBalancerType": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].loadBalancerType]"
+          },
+          "createRemoteAppHostpool": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].createRemoteAppHostpool]"
+          },
+          "maxSessionLimit": {
+            "value": "[variables('AVDbackplanes')[copyIndex()].maxSessionLimit]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "16862448381372689108"
+            }
+          },
+          "parameters": {
+            "hostpoolName": {
+              "type": "string"
+            },
+            "hostpoolFriendlyName": {
+              "type": "string"
+            },
+            "appgroupName": {
+              "type": "string"
+            },
+            "appgroupDesktopFriendlyName": {
+              "type": "string"
+            },
+            "appgroupRemoteAppFriendlyName": {
+              "type": "string"
+            },
+            "workspaceName": {
+              "type": "string"
+            },
+            "workspaceNameFriendlyName": {
+              "type": "string"
+            },
+            "preferredAppGroupType": {
+              "type": "string",
+              "defaultValue": "Desktop"
+            },
+            "AVDbackplanelocation": {
+              "type": "string",
+              "defaultValue": "eastus"
+            },
+            "hostPoolType": {
+              "type": "string",
+              "defaultValue": "pooled"
+            },
+            "loadBalancerType": {
+              "type": "string",
+              "defaultValue": "BreadthFirst"
+            },
+            "enableValiatioMode": {
+              "type": "bool"
+            },
+            "createRemoteAppHostpool": {
+              "type": "bool"
+            },
+            "maxSessionLimit": {
+              "type": "int"
+            }
+          },
+          "resources": {
+            "hp": {
+              "type": "Microsoft.DesktopVirtualization/hostPools",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[parameters('hostpoolName')]",
+              "location": "[parameters('AVDbackplanelocation')]",
+              "properties": {
+                "friendlyName": "[parameters('hostpoolFriendlyName')]",
+                "hostPoolType": "[parameters('hostPoolType')]",
+                "loadBalancerType": "[parameters('loadBalancerType')]",
+                "preferredAppGroupType": "[parameters('preferredAppGroupType')]",
+                "validationEnvironment": "[parameters('enableValiatioMode')]",
+                "maxSessionLimit": "[parameters('maxSessionLimit')]"
+              }
+            },
+            "agd": {
+              "type": "Microsoft.DesktopVirtualization/applicationGroups",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[parameters('appgroupName')]",
+              "location": "[parameters('AVDbackplanelocation')]",
+              "properties": {
+                "friendlyName": "[parameters('appgroupDesktopFriendlyName')]",
+                "applicationGroupType": "Desktop",
+                "hostPoolArmPath": "[resourceId('Microsoft.DesktopVirtualization/hostPools', parameters('hostpoolName'))]"
+              },
+              "dependsOn": [
+                "hp"
+              ]
+            },
+            "hpra": {
+              "condition": "[parameters('createRemoteAppHostpool')]",
+              "type": "Microsoft.DesktopVirtualization/hostPools",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[format('{0}-REMOTEAPP', parameters('hostpoolName'))]",
+              "location": "[parameters('AVDbackplanelocation')]",
+              "properties": {
+                "friendlyName": "[parameters('hostpoolFriendlyName')]",
+                "hostPoolType": "[parameters('hostPoolType')]",
+                "loadBalancerType": "[parameters('loadBalancerType')]",
+                "preferredAppGroupType": "RailApplications",
+                "validationEnvironment": "[parameters('enableValiatioMode')]",
+                "maxSessionLimit": "[parameters('maxSessionLimit')]"
+              }
+            },
+            "agra": {
+              "condition": "[parameters('createRemoteAppHostpool')]",
+              "type": "Microsoft.DesktopVirtualization/applicationGroups",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[format('{0}-REMOTEAPP', parameters('appgroupName'))]",
+              "location": "[parameters('AVDbackplanelocation')]",
+              "properties": {
+                "friendlyName": "[parameters('appgroupRemoteAppFriendlyName')]",
+                "applicationGroupType": "RemoteApp",
+                "hostPoolArmPath": "[resourceId('Microsoft.DesktopVirtualization/hostPools', format('{0}-REMOTEAPP', parameters('hostpoolName')))]"
+              },
+              "dependsOn": [
+                "hpra"
+              ]
+            },
+            "ws": {
+              "type": "Microsoft.DesktopVirtualization/workspaces",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[parameters('workspaceName')]",
+              "location": "[parameters('AVDbackplanelocation')]",
+              "properties": {
+                "friendlyName": "[parameters('workspaceNameFriendlyName')]",
+                "applicationGroupReferences": [
+                  "[resourceId('Microsoft.DesktopVirtualization/applicationGroups', parameters('appgroupName'))]",
+                  "[if(parameters('createRemoteAppHostpool'), resourceId('Microsoft.DesktopVirtualization/applicationGroups', format('{0}-REMOTEAPP', parameters('appgroupName'))), '')]"
+                ]
+              },
+              "dependsOn": [
+                "agd",
+                "agra"
+              ]
+            }
+          },
+          "outputs": {
+            "hpid": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.DesktopVirtualization/hostPools', parameters('hostpoolName'))]"
+            },
+            "hpraid": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.DesktopVirtualization/hostPools', format('{0}-REMOTEAPP', parameters('hostpoolName')))]"
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgAVDp"
+      ]
+    },
+    "AVDnetwork": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "AVDnetwork",
+      "resourceGroup": "[format('{0}NETWORK{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "templateVMResourceGroup": {
+            "value": "[format('{0}TEMPLATE-VM{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]"
+          },
+          "vnetLocation": {
+            "value": "[reference('rgnw', '2022-09-01', 'full').location]"
+          },
+          "vnetName": {
+            "value": "[parameters('vnetName')]"
+          },
+          "vnetaddressPrefix": {
+            "value": "[parameters('vnetaddressPrefix')]"
+          },
+          "dnsServer": {
+            "value": "[parameters('dnsServer')]"
+          },
+          "subnet1Prefix": {
+            "value": "[parameters('subnet1Prefix')]"
+          },
+          "subnet1Name": {
+            "value": "[parameters('subnet1Name')]"
+          },
+          "subnet2Prefix": {
+            "value": "[parameters('subnet2Prefix')]"
+          },
+          "subnet2Name": {
+            "value": "[parameters('subnet2Name')]"
+          },
+          "vmname": {
+            "value": "[variables('vnName1')]"
+          },
+          "vmHostname": {
+            "value": "[parameters('vmHostname1')]"
+          },
+          "vmSize": {
+            "value": "[parameters('vmSize1')]"
+          },
+          "adminUserName": {
+            "value": "[parameters('adminUserName')]"
+          },
+          "adminPassword": {
+            "value": "[parameters('adminPassword')]"
+          },
+          "vmLocation": {
+            "value": "[reference('rgtvm', '2022-09-01', 'full').location]"
+          },
+          "createPeering": {
+            "value": "[parameters('createPeering')]"
+          },
+          "remoteVnetName": {
+            "value": "[parameters('remoteVnetName')]"
+          },
+          "remoteVnetRg": {
+            "value": "[parameters('remoteVnetRg')]"
+          },
+          "vNetVMResourceGroup": {
+            "value": "[format('{0}NETWORK{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "7457079100545828284"
+            }
+          },
+          "parameters": {
+            "vnetLocation": {
+              "type": "string"
+            },
+            "vnetName": {
+              "type": "string"
+            },
+            "vnetaddressPrefix": {
+              "type": "string"
+            },
+            "subnet1Prefix": {
+              "type": "string"
+            },
+            "subnet1Name": {
+              "type": "string"
+            },
+            "subnet2Prefix": {
+              "type": "string"
+            },
+            "subnet2Name": {
+              "type": "string"
+            },
+            "dnsServer": {
+              "type": "string"
+            },
+            "vmname": {
+              "type": "string"
+            },
+            "vmHostname": {
+              "type": "string"
+            },
+            "vmSize": {
+              "type": "string"
+            },
+            "vmLocation": {
+              "type": "string"
+            },
+            "templateVMResourceGroup": {
+              "type": "string"
+            },
+            "adminUserName": {
+              "type": "string"
+            },
+            "adminPassword": {
+              "type": "securestring"
+            },
+            "createPeering": {
+              "type": "bool"
+            },
+            "remoteVnetRg": {
+              "type": "string"
+            },
+            "remoteVnetName": {
+              "type": "string"
+            },
+            "vNetVMResourceGroup": {
+              "type": "string"
+            }
+          },
+          "resources": {
+            "vnet": {
+              "type": "Microsoft.Network/virtualNetworks",
+              "apiVersion": "2023-04-01",
+              "name": "[parameters('vnetName')]",
+              "location": "[parameters('vnetLocation')]",
+              "properties": {
+                "addressSpace": {
+                  "addressPrefixes": [
+                    "[parameters('vnetaddressPrefix')]"
+                  ]
+                },
+                "dhcpOptions": {
+                  "dnsServers": [
+                    "[parameters('dnsServer')]"
+                  ]
+                },
+                "subnets": [
+                  {
+                    "name": "[parameters('subnet1Name')]",
+                    "properties": {
+                      "addressPrefix": "[parameters('subnet1Prefix')]"
+                    }
+                  },
+                  {
+                    "name": "[parameters('subnet2Name')]",
+                    "properties": {
+                      "addressPrefix": "[parameters('subnet2Prefix')]",
+                      "privateLinkServiceNetworkPolicies": "Disabled"
+                    }
+                  }
+                ]
+              }
+            },
+            "peertoadds": {
+              "condition": "[parameters('createPeering')]",
+              "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+              "apiVersion": "2023-04-01",
+              "name": "[format('{0}/{1}', parameters('vnetName'), 'peering-to-adds-vnet')]",
+              "properties": {
+                "allowVirtualNetworkAccess": true,
+                "allowForwardedTraffic": false,
+                "allowGatewayTransit": false,
+                "useRemoteGateways": false,
+                "remoteVirtualNetwork": {
+                  "id": "[resourceId(parameters('remoteVnetRg'), 'Microsoft.Network/virtualNetworks', parameters('remoteVnetName'))]"
+                }
+              },
+              "dependsOn": [
+                "vnet"
+              ]
+            },
+            "peerfromadds": {
+              "condition": "[parameters('createPeering')]",
+              "type": "Microsoft.Resources/deployments",
+              "apiVersion": "2022-09-01",
+              "name": "peering",
+              "resourceGroup": "[parameters('remoteVnetRg')]",
+              "properties": {
+                "expressionEvaluationOptions": {
+                  "scope": "inner"
+                },
+                "mode": "Incremental",
+                "parameters": {
+                  "remoteVnetName": {
+                    "value": "[parameters('remoteVnetName')]"
+                  },
+                  "vnetName": {
+                    "value": "[parameters('vnetName')]"
+                  },
+                  "vnetNameResourceGroup": {
+                    "value": "[parameters('vNetVMResourceGroup')]"
+                  }
+                },
+                "template": {
+                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "languageVersion": "2.1-experimental",
+                  "contentVersion": "1.0.0.0",
+                  "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Extensibility",
+                      "MicrosoftGraph Preview"
+                    ],
+                    "_generator": {
+                      "name": "bicep",
+                      "version": "0.21.1.54444",
+                      "templateHash": "11258325154957111138"
+                    }
+                  },
+                  "parameters": {
+                    "vnetName": {
+                      "type": "string"
+                    },
+                    "remoteVnetName": {
+                      "type": "string"
+                    },
+                    "vnetNameResourceGroup": {
+                      "type": "string"
+                    }
+                  },
+                  "resources": {
+                    "peertfromadds": {
+                      "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+                      "apiVersion": "2023-04-01",
+                      "name": "[format('{0}/peering-from-adds-vnet', parameters('remoteVnetName'))]",
+                      "properties": {
+                        "allowVirtualNetworkAccess": true,
+                        "allowForwardedTraffic": false,
+                        "allowGatewayTransit": false,
+                        "useRemoteGateways": false,
+                        "remoteVirtualNetwork": {
+                          "id": "[resourceId(parameters('vnetNameResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('vnetName'))]"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "dependsOn": [
+                "vnet"
+              ]
+            },
+            "tvm": {
+              "type": "Microsoft.Resources/deployments",
+              "apiVersion": "2022-09-01",
+              "name": "tvmbim",
+              "resourceGroup": "[parameters('templateVMResourceGroup')]",
+              "properties": {
+                "expressionEvaluationOptions": {
+                  "scope": "inner"
+                },
+                "mode": "Incremental",
+                "parameters": {
+                  "vmname": {
+                    "value": "[parameters('vmname')]"
+                  },
+                  "vmHostname": {
+                    "value": "[parameters('vmHostname')]"
+                  },
+                  "adminUserName": {
+                    "value": "[parameters('adminUserName')]"
+                  },
+                  "adminPassword": {
+                    "value": "[parameters('adminPassword')]"
+                  },
+                  "vmLocation": {
+                    "value": "[parameters('vmLocation')]"
+                  },
+                  "vmSize": {
+                    "value": "[parameters('vmSize')]"
+                  },
+                  "subnetName": {
+                    "value": "[parameters('subnet2Name')]"
+                  },
+                  "vnetid": {
+                    "value": "[resourceId('Microsoft.Network/virtualNetworks', parameters('vnetName'))]"
+                  }
+                },
+                "template": {
+                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "languageVersion": "2.1-experimental",
+                  "contentVersion": "1.0.0.0",
+                  "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Extensibility",
+                      "MicrosoftGraph Preview"
+                    ],
+                    "_generator": {
+                      "name": "bicep",
+                      "version": "0.21.1.54444",
+                      "templateHash": "7375888109261799264"
+                    }
+                  },
+                  "parameters": {
+                    "vmname": {
+                      "type": "string"
+                    },
+                    "vmHostname": {
+                      "type": "string"
+                    },
+                    "vmLocation": {
+                      "type": "string",
+                      "defaultValue": "westeurope"
+                    },
+                    "vmSize": {
+                      "type": "string"
+                    },
+                    "adminUserName": {
+                      "type": "string"
+                    },
+                    "adminPassword": {
+                      "type": "securestring"
+                    },
+                    "vnetid": {
+                      "type": "string"
+                    },
+                    "subnetName": {
+                      "type": "string"
+                    }
+                  },
+                  "variables": {
+                    "nicName": "[format('{0}-nic', parameters('vmname'))]",
+                    "subnetRef": "[format('{0}/subnets/{1}', parameters('vnetid'), parameters('subnetName'))]"
+                  },
+                  "resources": {
+                    "nic": {
+                      "type": "Microsoft.Network/networkInterfaces",
+                      "apiVersion": "2023-04-01",
+                      "name": "[variables('nicName')]",
+                      "location": "[parameters('vmLocation')]",
+                      "properties": {
+                        "ipConfigurations": [
+                          {
+                            "name": "ipconfig1",
+                            "properties": {
+                              "privateIPAllocationMethod": "Dynamic",
+                              "subnet": {
+                                "id": "[variables('subnetRef')]"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "vm": {
+                      "type": "Microsoft.Compute/virtualMachines",
+                      "apiVersion": "2023-03-01",
+                      "name": "[parameters('vmname')]",
+                      "location": "[parameters('vmLocation')]",
+                      "properties": {
+                        "hardwareProfile": {
+                          "vmSize": "[parameters('vmSize')]"
+                        },
+                        "osProfile": {
+                          "computerName": "[parameters('vmHostname')]",
+                          "adminUsername": "[parameters('adminUserName')]",
+                          "adminPassword": "[parameters('adminPassword')]"
+                        },
+                        "storageProfile": {
+                          "imageReference": {
+                            "publisher": "microsoftwindowsdesktop",
+                            "offer": "windows-11",
+                            "sku": "win11-22h2-avd",
+                            "version": "latest"
+                          },
+                          "osDisk": {
+                            "createOption": "FromImage",
+                            "name": "[format('{0}-osdisk', parameters('vmname'))]"
+                          }
+                        },
+                        "networkProfile": {
+                          "networkInterfaces": [
+                            {
+                              "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]"
+                            }
+                          ]
+                        }
+                      },
+                      "dependsOn": [
+                        "nic"
+                      ]
+                    }
+                  }
+                }
+              },
+              "dependsOn": [
+                "vnet"
+              ]
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgnw",
+        "rgtvm"
+      ]
+    },
+    "AVDmonitor": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "LAWorkspace",
+      "resourceGroup": "[format('{0}MONITORING{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "logAnalyticsWorkspaceName": {
+            "value": "[parameters('logAnalyticsWorkspaceName')]"
+          },
+          "logAnalyticslocation": {
+            "value": "[reference('rgmon', '2022-09-01', 'full').location]"
+          },
+          "logAnalyticsWorkspaceSku": {
+            "value": "[parameters('logAnalyticsWorkspaceSku')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "10429906392821952173"
+            }
+          },
+          "parameters": {
+            "logAnalyticsWorkspaceName": {
+              "type": "string"
+            },
+            "logAnalyticslocation": {
+              "type": "string",
+              "defaultValue": "westeurope"
+            },
+            "logAnalyticsWorkspaceSku": {
+              "type": "string"
+            }
+          },
+          "resources": {
+            "AVDla": {
+              "type": "Microsoft.OperationalInsights/workspaces",
+              "apiVersion": "2022-10-01",
+              "name": "[parameters('logAnalyticsWorkspaceName')]",
+              "location": "[parameters('logAnalyticslocation')]",
+              "properties": {
+                "sku": {
+                  "name": "[parameters('logAnalyticsWorkspaceSku')]"
+                }
+              }
+            }
+          },
+          "outputs": {
+            "logAnalyticsWorkspaceID": {
+              "type": "string",
+              "value": "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('logAnalyticsWorkspaceName'))]"
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgmon"
+      ]
+    },
+    "AVDsig": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "AVDsig",
+      "resourceGroup": "[format('{0}TEMPLATE-IMAGE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "sigLocation": {
+            "value": "[reference('rgti', '2022-09-01', 'full').location]"
+          },
+          "sigName": {
+            "value": "[parameters('sigName')]"
+          },
+          "sigReourceGroup": {
+            "value": "[format('{0}TEMPLATE-IMAGE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]"
+          },
+          "imageDefinitionName": {
+            "value": "[parameters('imageDefinitionName')]"
+          },
+          "imageOffer": {
+            "value": "[parameters('imageOffer')]"
+          },
+          "imagePublisher": {
+            "value": "[parameters('imagePublisher')]"
+          },
+          "imageSKU": {
+            "value": "[parameters('imageSKU')]"
+          },
+          "userIdentity": {
+            "value": "[variables('userAssignedIdentityID')]"
+          },
+          "vmOffer": {
+            "value": "[parameters('vmOffer')]"
+          },
+          "vmOSDiskSize": {
+            "value": "[parameters('vmOSDiskSize')]"
+          },
+          "vmPublisher": {
+            "value": "[parameters('vmPublisher')]"
+          },
+          "vmSizeAIB": {
+            "value": "[parameters('vmSizeAIB')]"
+          },
+          "vmSku": {
+            "value": "[parameters('vmSku')]"
+          },
+          "vmVersion": {
+            "value": "[parameters('vmVersion')]"
+          },
+          "azureSubscriptionID": {
+            "value": "[parameters('azureSubscriptionID')]"
+          },
+          "principalID": {
+            "value": "[parameters('principalID')]"
+          },
+          "roleNameGalleryImage": {
+            "value": "[parameters('roleNameGalleryImage')]"
+          },
+          "templateImageResourceGroup": {
+            "value": "[format('{0}TEMPLATE-IMAGE{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "8941466768091451964"
+            }
+          },
+          "parameters": {
+            "azureSubscriptionID": {
+              "type": "string"
+            },
+            "sigName": {
+              "type": "string"
+            },
+            "sigLocation": {
+              "type": "string"
+            },
+            "sigReourceGroup": {
+              "type": "string"
+            },
+            "imagePublisher": {
+              "type": "string"
+            },
+            "imageDefinitionName": {
+              "type": "string"
+            },
+            "imageOffer": {
+              "type": "string"
+            },
+            "imageSKU": {
+              "type": "string"
+            },
+            "userIdentity": {
+              "type": "string"
+            },
+            "vmOffer": {
+              "type": "string"
+            },
+            "vmOSDiskSize": {
+              "type": "int"
+            },
+            "vmSku": {
+              "type": "string"
+            },
+            "vmVersion": {
+              "type": "string"
+            },
+            "vmPublisher": {
+              "type": "string"
+            },
+            "vmSizeAIB": {
+              "type": "string"
+            },
+            "roleNameGalleryImage": {
+              "type": "string"
+            },
+            "principalID": {
+              "type": "string"
+            },
+            "templateImageResourceGroup": {
+              "type": "string"
+            }
+          },
+          "variables": {
+            "assignableScopes": "[format('/subscriptions/{0}/resourcegroups/{1}', parameters('azureSubscriptionID'), parameters('templateImageResourceGroup'))]"
+          },
+          "resources": {
+            "AVDsig": {
+              "type": "Microsoft.Compute/galleries",
+              "apiVersion": "2022-03-03",
+              "name": "[parameters('sigName')]",
+              "location": "[parameters('sigLocation')]"
+            },
+            "gallerydef": {
+              "type": "Microsoft.Authorization/roleDefinitions",
+              "apiVersion": "2022-05-01-preview",
+              "name": "[guid(parameters('roleNameGalleryImage'))]",
+              "properties": {
+                "roleName": "[parameters('roleNameGalleryImage')]",
+                "description": "Custom role for network read",
+                "permissions": [
+                  {
+                    "actions": [
+                      "Microsoft.Compute/galleries/read",
+                      "Microsoft.Compute/galleries/images/read",
+                      "Microsoft.Compute/galleries/images/versions/read",
+                      "Microsoft.Compute/galleries/images/versions/write",
+                      "Microsoft.Compute/images/write",
+                      "Microsoft.Compute/images/read",
+                      "Microsoft.Compute/images/delete"
+                    ]
+                  }
+                ],
+                "assignableScopes": [
+                  "[variables('assignableScopes')]"
+                ]
+              },
+              "dependsOn": [
+                "AVDsig"
+              ]
+            },
+            "galleryass": {
+              "type": "Microsoft.Authorization/roleAssignments",
+              "apiVersion": "2022-04-01",
+              "name": "[guid(resourceGroup().id)]",
+              "properties": {
+                "roleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', guid(parameters('roleNameGalleryImage')))]",
+                "principalId": "[parameters('principalID')]"
+              },
+              "dependsOn": [
+                "AVDsig",
+                "gallerydef"
+              ]
+            },
+            "AVDid": {
+              "type": "Microsoft.Resources/deployments",
+              "apiVersion": "2022-09-01",
+              "name": "AVDid",
+              "resourceGroup": "[parameters('sigReourceGroup')]",
+              "properties": {
+                "expressionEvaluationOptions": {
+                  "scope": "inner"
+                },
+                "mode": "Incremental",
+                "parameters": {
+                  "imageGalleryName": {
+                    "value": "[parameters('sigName')]"
+                  },
+                  "imageLocation": {
+                    "value": "[parameters('sigLocation')]"
+                  },
+                  "imageDefinitionName": {
+                    "value": "[parameters('imageDefinitionName')]"
+                  },
+                  "imageOffer": {
+                    "value": "[parameters('imageOffer')]"
+                  },
+                  "imagePublisher": {
+                    "value": "[parameters('imagePublisher')]"
+                  },
+                  "imageSKU": {
+                    "value": "[parameters('imageSKU')]"
+                  },
+                  "templateImageResourceGroup": {
+                    "value": "[parameters('sigReourceGroup')]"
+                  },
+                  "imageTemplateName": {
+                    "value": "[parameters('imageDefinitionName')]"
+                  },
+                  "userIdentity": {
+                    "value": "[parameters('userIdentity')]"
+                  },
+                  "vmOffer": {
+                    "value": "[parameters('vmOffer')]"
+                  },
+                  "vmOSDiskSize": {
+                    "value": "[parameters('vmOSDiskSize')]"
+                  },
+                  "vmPublisher": {
+                    "value": "[parameters('vmPublisher')]"
+                  },
+                  "vmSize": {
+                    "value": "[parameters('vmSizeAIB')]"
+                  },
+                  "vmSku": {
+                    "value": "[parameters('vmSku')]"
+                  },
+                  "vmVersion": {
+                    "value": "[parameters('vmVersion')]"
+                  },
+                  "azureSubscriptionID": {
+                    "value": "[parameters('azureSubscriptionID')]"
+                  }
+                },
+                "template": {
+                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "languageVersion": "2.1-experimental",
+                  "contentVersion": "1.0.0.0",
+                  "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Extensibility",
+                      "MicrosoftGraph Preview"
+                    ],
+                    "_generator": {
+                      "name": "bicep",
+                      "version": "0.21.1.54444",
+                      "templateHash": "5407088147362472088"
+                    }
+                  },
+                  "parameters": {
+                    "azureSubscriptionID": {
+                      "type": "string"
+                    },
+                    "imageGalleryName": {
+                      "type": "string"
+                    },
+                    "imageDefinitionName": {
+                      "type": "string"
+                    },
+                    "imageLocation": {
+                      "type": "string"
+                    },
+                    "imagePublisher": {
+                      "type": "string"
+                    },
+                    "imageOffer": {
+                      "type": "string"
+                    },
+                    "imageSKU": {
+                      "type": "string"
+                    },
+                    "templateImageResourceGroup": {
+                      "type": "string"
+                    },
+                    "imageTemplateName": {
+                      "type": "string"
+                    },
+                    "userIdentity": {
+                      "type": "string"
+                    },
+                    "vmOffer": {
+                      "type": "string"
+                    },
+                    "vmSize": {
+                      "type": "string"
+                    },
+                    "vmOSDiskSize": {
+                      "type": "int"
+                    },
+                    "vmPublisher": {
+                      "type": "string"
+                    },
+                    "vmSku": {
+                      "type": "string"
+                    },
+                    "vmVersion": {
+                      "type": "string"
+                    }
+                  },
+                  "variables": {
+                    "imageDefinitionFullName": "[format('{0}/{1}', parameters('imageGalleryName'), parameters('imageDefinitionName'))]"
+                  },
+                  "resources": {
+                    "AVDid": {
+                      "type": "Microsoft.Compute/galleries/images",
+                      "apiVersion": "2022-03-03",
+                      "name": "[variables('imageDefinitionFullName')]",
+                      "location": "[parameters('imageLocation')]",
+                      "properties": {
+                        "osState": "Generalized",
+                        "osType": "Windows",
+                        "hyperVGeneration": "V2",
+                        "identifier": {
+                          "publisher": "[parameters('imagePublisher')]",
+                          "offer": "[parameters('imageOffer')]",
+                          "sku": "[parameters('imageSKU')]"
+                        }
+                      }
+                    },
+                    "AVDti": {
+                      "type": "Microsoft.Resources/deployments",
+                      "apiVersion": "2022-09-01",
+                      "name": "[parameters('imageTemplateName')]",
+                      "resourceGroup": "[parameters('templateImageResourceGroup')]",
+                      "properties": {
+                        "expressionEvaluationOptions": {
+                          "scope": "inner"
+                        },
+                        "mode": "Incremental",
+                        "parameters": {
+                          "azureSubscriptinID": {
+                            "value": "[parameters('azureSubscriptionID')]"
+                          },
+                          "imageGalleryName": {
+                            "value": "[parameters('imageGalleryName')]"
+                          },
+                          "imageGalleryRecourceGroupName": {
+                            "value": "[parameters('templateImageResourceGroup')]"
+                          },
+                          "imageTemplateLocation": {
+                            "value": "[parameters('imageLocation')]"
+                          },
+                          "imageTemplateName": {
+                            "value": "[parameters('imageTemplateName')]"
+                          },
+                          "userIdentity": {
+                            "value": "[parameters('userIdentity')]"
+                          },
+                          "vmOffer": {
+                            "value": "[parameters('vmOffer')]"
+                          },
+                          "vmOSDiskSize": {
+                            "value": "[parameters('vmOSDiskSize')]"
+                          },
+                          "vmPublisher": {
+                            "value": "[parameters('vmPublisher')]"
+                          },
+                          "vmSize": {
+                            "value": "[parameters('vmSize')]"
+                          },
+                          "vmSku": {
+                            "value": "[parameters('vmSku')]"
+                          },
+                          "vmVersion": {
+                            "value": "[parameters('vmVersion')]"
+                          }
+                        },
+                        "template": {
+                          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                          "languageVersion": "2.1-experimental",
+                          "contentVersion": "1.0.0.0",
+                          "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Extensibility",
+                              "MicrosoftGraph Preview"
+                            ],
+                            "_generator": {
+                              "name": "bicep",
+                              "version": "0.21.1.54444",
+                              "templateHash": "10291749316145348537"
+                            }
+                          },
+                          "parameters": {
+                            "azureSubscriptinID": {
+                              "type": "string"
+                            },
+                            "imageGalleryName": {
+                              "type": "string"
+                            },
+                            "imageGalleryRecourceGroupName": {
+                              "type": "string"
+                            },
+                            "imageTemplateName": {
+                              "type": "string"
+                            },
+                            "imageTemplateLocation": {
+                              "type": "string"
+                            },
+                            "vmSize": {
+                              "type": "string"
+                            },
+                            "vmOSDiskSize": {
+                              "type": "int"
+                            },
+                            "vmPublisher": {
+                              "type": "string"
+                            },
+                            "vmOffer": {
+                              "type": "string"
+                            },
+                            "vmSku": {
+                              "type": "string"
+                            },
+                            "vmVersion": {
+                              "type": "string"
+                            },
+                            "userIdentity": {
+                              "type": "string"
+                            }
+                          },
+                          "variables": {
+                            "galleryImageId": "[format('/subscriptions/{0}/resourceGroups/{1}/providers/Microsoft.Compute/galleries/{2}/images/{3}', parameters('azureSubscriptinID'), parameters('imageGalleryRecourceGroupName'), parameters('imageGalleryName'), parameters('imageTemplateName'))]"
+                          },
+                          "resources": {
+                            "AVDit": {
+                              "type": "Microsoft.VirtualMachineImages/imageTemplates",
+                              "apiVersion": "2022-07-01",
+                              "name": "[parameters('imageTemplateName')]",
+                              "identity": {
+                                "type": "UserAssigned",
+                                "userAssignedIdentities": {
+                                  "[format('{0}', parameters('userIdentity'))]": {}
+                                }
+                              },
+                              "location": "[parameters('imageTemplateLocation')]",
+                              "properties": {
+                                "buildTimeoutInMinutes": 100,
+                                "vmProfile": {
+                                  "vmSize": "[parameters('vmSize')]",
+                                  "osDiskSizeGB": "[parameters('vmOSDiskSize')]"
+                                },
+                                "source": {
+                                  "type": "PlatformImage",
+                                  "publisher": "[parameters('vmPublisher')]",
+                                  "offer": "[parameters('vmOffer')]",
+                                  "sku": "[parameters('vmSku')]",
+                                  "version": "[parameters('vmVersion')]"
+                                },
+                                "customize": [
+                                  {
+                                    "type": "PowerShell",
+                                    "name": "GetAzCopy",
+                                    "inline": [
+                                      "New-Item -type Directory -Path C:\\ -Name temp",
+                                      "Invoke-WebRequest -Uri https://aka.ms/downloadazcopy-v10-windows -OutFile c:\\temp\\azcopy.zip",
+                                      "Expand-Archive C:\\temp\\azcopy.zip c:\\temp",
+                                      "Copy-Item C:\\temp\\azcopy_windows_amd64_*\\azcopy.exe\\ -Destination C:\\temp"
+                                    ]
+                                  },
+                                  {
+                                    "type": "PowerShell",
+                                    "name": "GetCustomizeScriptAndApps",
+                                    "inline": [
+                                      "C:\\temp\\azcopy.exe copy \"https://ninjawvdprofiles.blob.core.windows.net/liquit/avd-liquit-aib-demo.msi?sp=r&st=2021-09-13T12:15:54Z&se=2022-10-06T20:15:54Z&spr=https&sv=2020-08-04&sr=b&sig=1esX6FXbDM9reIHS8%2BEaywhVFLl342qMrhooi%2BKAOlY%3D\"  C:\\temp\\avd-liquit-aib-demo.msi",
+                                      "C:\\temp\\azcopy.exe copy \"https://ninjawvdprofiles.blob.core.windows.net/liquit/avd-ninja-aib-deploy.ps1?sp=r&st=2021-09-13T12:16:13Z&se=2022-11-17T21:16:13Z&spr=https&sv=2020-08-04&sr=b&sig=DlNnL54AlrApHJvZxVaKLvbH3odr9S8oH8TfVd8wjEc%3D\"  C:\\temp\\avd-ninja-aib-deploy.ps1",
+                                      "C:\\temp\\azcopy.exe copy \"https://ninjawvdprofiles.blob.core.windows.net/liquit/run-ShellAPI.ps1?sp=r&st=2021-09-19T08:24:10Z&se=2023-01-19T17:24:10Z&spr=https&sv=2020-08-04&sr=b&sig=d%2Fz1wjFHGKBEvZHCMg4NQssJ4wp8qsuwL2hvQwiX%2FyM%3D\"  C:\\temp\\run-ShellAPI.ps1",
+                                      "Set-ExecutionPolicy Bypass -Force",
+                                      "C:\\temp\\avd-ninja-aib-deploy.ps1"
+                                    ],
+                                    "runElevated": true
+                                  }
+                                ],
+                                "distribute": [
+                                  {
+                                    "type": "SharedImage",
+                                    "galleryImageId": "[variables('galleryImageId')]",
+                                    "runOutputName": "[parameters('imageTemplateName')]",
+                                    "replicationRegions": [
+                                      "North Europe"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "dependsOn": [
+                "AVDsig"
+              ]
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgti"
+      ]
+    },
+    "AVDsa": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "AVDsa",
+      "resourceGroup": "[format('{0}FILESERVICES{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "storageaccountlocation1": {
+            "value": "[parameters('storageaccountlocation1')]"
+          },
+          "storageaccountName1": {
+            "value": "[parameters('storageaccountName1')]"
+          },
+          "storageaccountkind1": {
+            "value": "[parameters('storageaccountkind1')]"
+          },
+          "storgeaccountglobalRedundancy1": {
+            "value": "[parameters('storgeaccountglobalRedundancy1')]"
+          },
+          "storageaccountlocation2": {
+            "value": "[parameters('storageaccountlocation2')]"
+          },
+          "storageaccountName2": {
+            "value": "[parameters('storageaccountName2')]"
+          },
+          "storageaccountkind2": {
+            "value": "[parameters('storageaccountkind2')]"
+          },
+          "storgeaccountglobalRedundancy2": {
+            "value": "[parameters('storgeaccountglobalRedundancy2')]"
+          },
+          "fileshareFolderName1": {
+            "value": "[parameters('fileshareFolderName1')]"
+          },
+          "fileshareFolderName2": {
+            "value": "[parameters('fileshareFolderName2')]"
+          },
+          "fileshareFolderName3": {
+            "value": "[parameters('fileshareFolderName3')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "17630002710750248421"
+            }
+          },
+          "parameters": {
+            "storageaccountlocation1": {
+              "type": "string"
+            },
+            "storageaccountName1": {
+              "type": "string"
+            },
+            "storageaccountkind1": {
+              "type": "string"
+            },
+            "storgeaccountglobalRedundancy1": {
+              "type": "string"
+            },
+            "storageaccountlocation2": {
+              "type": "string"
+            },
+            "storageaccountName2": {
+              "type": "string"
+            },
+            "storageaccountkind2": {
+              "type": "string"
+            },
+            "storgeaccountglobalRedundancy2": {
+              "type": "string"
+            },
+            "fileshareFolderName1": {
+              "type": "string"
+            },
+            "fileshareFolderName2": {
+              "type": "string"
+            },
+            "fileshareFolderName3": {
+              "type": "string"
+            }
+          },
+          "variables": {
+            "filesharelocation1": "[format('{0}/default/{1}', parameters('storageaccountName1'), parameters('fileshareFolderName1'))]",
+            "filesharelocation2": "[format('{0}/default/{1}', parameters('storageaccountName1'), parameters('fileshareFolderName2'))]",
+            "filesharelocation3": "[format('{0}/default/{1}', parameters('storageaccountName2'), parameters('fileshareFolderName3'))]"
+          },
+          "resources": {
+            "saaib": {
+              "type": "Microsoft.Storage/storageAccounts",
+              "apiVersion": "2023-01-01",
+              "name": "[parameters('storageaccountName1')]",
+              "location": "[parameters('storageaccountlocation1')]",
+              "kind": "[parameters('storageaccountkind1')]",
+              "sku": {
+                "name": "[parameters('storgeaccountglobalRedundancy1')]"
+              }
+            },
+            "fssofwtare": {
+              "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+              "apiVersion": "2023-01-01",
+              "name": "[variables('filesharelocation1')]",
+              "dependsOn": [
+                "saaib"
+              ]
+            },
+            "fsscripts": {
+              "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+              "apiVersion": "2023-01-01",
+              "name": "[variables('filesharelocation2')]",
+              "dependsOn": [
+                "saaib"
+              ]
+            },
+            "saprof": {
+              "type": "Microsoft.Storage/storageAccounts",
+              "apiVersion": "2023-01-01",
+              "name": "[parameters('storageaccountName2')]",
+              "location": "[parameters('storageaccountlocation2')]",
+              "kind": "[parameters('storageaccountkind2')]",
+              "sku": {
+                "name": "[parameters('storgeaccountglobalRedundancy2')]"
+              }
+            },
+            "fsprofiles": {
+              "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
+              "apiVersion": "2023-01-01",
+              "name": "[variables('filesharelocation3')]",
+              "properties": {
+                "shareQuota": 1000
+              },
+              "dependsOn": [
+                "saprof"
+              ]
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgfs"
+      ]
+    },
+    "AVDkeyvault": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "AVDkeyvault",
+      "resourceGroup": "[format('{0}KEYVAULT{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "keyVaultName": {
+            "value": "[parameters('keyVaultName')]"
+          },
+          "keyVaultLocation": {
+            "value": "[parameters('keyVaultLocation')]"
+          },
+          "azureADTenantID": {
+            "value": "[parameters('azureADTenantID')]"
+          },
+          "adminObjectID": {
+            "value": "[parameters('adminObjectID')]"
+          },
+          "secretNameDomainJoin": {
+            "value": "[parameters('secretNameDomainJoin')]"
+          },
+          "secretValueDomainJoin": {
+            "value": "[parameters('secretValueDomainJoin')]"
+          },
+          "secretNameLocalAdminPassword": {
+            "value": "[parameters('secretNameLocalAdminPassword')]"
+          },
+          "secretValueLocalAdminPassword": {
+            "value": "[parameters('secretValueLocalAdminPassword')]"
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "4091228444204497094"
+            }
+          },
+          "parameters": {
+            "keyVaultName": {
+              "type": "string"
+            },
+            "keyVaultLocation": {
+              "type": "string"
+            },
+            "azureADTenantID": {
+              "type": "string"
+            },
+            "adminObjectID": {
+              "type": "string"
+            },
+            "sku": {
+              "type": "string",
+              "defaultValue": "Standard"
+            },
+            "enabledForDeployment": {
+              "type": "bool",
+              "defaultValue": true
+            },
+            "enabledForTemplateDeployment": {
+              "type": "bool",
+              "defaultValue": true
+            },
+            "enabledForDiskEncryption": {
+              "type": "bool",
+              "defaultValue": true
+            },
+            "enableRbacAuthorization": {
+              "type": "bool",
+              "defaultValue": false
+            },
+            "softDeleteRetentionInDays": {
+              "type": "int",
+              "defaultValue": 90
+            },
+            "secretNameDomainJoin": {
+              "type": "string"
+            },
+            "secretValueDomainJoin": {
+              "type": "securestring"
+            },
+            "secretNameLocalAdminPassword": {
+              "type": "string"
+            },
+            "secretValueLocalAdminPassword": {
+              "type": "securestring"
+            },
+            "accessPolicies": {
+              "type": "array",
+              "defaultValue": [
+                {
+                  "tenantId": "[parameters('azureADTenantID')]",
+                  "objectId": "[parameters('adminObjectID')]",
+                  "permissions": {
+                    "keys": [
+                      "Get",
+                      "List",
+                      "Update",
+                      "Create",
+                      "Import",
+                      "Delete",
+                      "Recover",
+                      "Backup",
+                      "Restore"
+                    ],
+                    "secrets": [
+                      "Get",
+                      "List",
+                      "Set",
+                      "Delete",
+                      "Recover",
+                      "Backup",
+                      "Restore"
+                    ],
+                    "certificates": [
+                      "Get",
+                      "List",
+                      "Update",
+                      "Create",
+                      "Import",
+                      "Delete",
+                      "Recover",
+                      "Backup",
+                      "Restore",
+                      "ManageContacts",
+                      "ManageIssuers",
+                      "GetIssuers",
+                      "ListIssuers",
+                      "SetIssuers",
+                      "DeleteIssuers"
+                    ]
+                  }
+                }
+              ]
+            },
+            "networkAcls": {
+              "type": "object",
+              "defaultValue": {
+                "ipRules": [],
+                "virtualNetworkRules": []
+              }
+            }
+          },
+          "resources": {
+            "keyvault": {
+              "type": "Microsoft.KeyVault/vaults",
+              "apiVersion": "2023-02-01",
+              "name": "[parameters('keyVaultName')]",
+              "location": "[parameters('keyVaultLocation')]",
+              "properties": {
+                "tenantId": "[parameters('azureADTenantID')]",
+                "sku": {
+                  "family": "A",
+                  "name": "[parameters('sku')]"
+                },
+                "accessPolicies": "[parameters('accessPolicies')]",
+                "enabledForDeployment": "[parameters('enabledForDeployment')]",
+                "enabledForDiskEncryption": "[parameters('enabledForDiskEncryption')]",
+                "enabledForTemplateDeployment": "[parameters('enabledForTemplateDeployment')]",
+                "softDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]",
+                "enableRbacAuthorization": "[parameters('enableRbacAuthorization')]",
+                "networkAcls": "[parameters('networkAcls')]"
+              }
+            },
+            "secretdj": {
+              "type": "Microsoft.KeyVault/vaults/secrets",
+              "apiVersion": "2023-02-01",
+              "name": "[format('{0}/{1}', parameters('keyVaultName'), parameters('secretNameDomainJoin'))]",
+              "properties": {
+                "value": "[parameters('secretValueDomainJoin')]"
+              },
+              "dependsOn": [
+                "keyvault"
+              ]
+            },
+            "secretla": {
+              "type": "Microsoft.KeyVault/vaults/secrets",
+              "apiVersion": "2023-02-01",
+              "name": "[format('{0}/{1}', parameters('keyVaultName'), parameters('secretNameLocalAdminPassword'))]",
+              "properties": {
+                "value": "[parameters('secretValueLocalAdminPassword')]"
+              },
+              "dependsOn": [
+                "keyvault"
+              ]
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "rgkv"
+      ]
+    },
+    "AVDScale": {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2022-09-01",
+      "name": "AVDScale",
+      "resourceGroup": "[format('{0}SCALE-PLANS{1}', parameters('resourceGroupProdPrefix'), parameters('resourceGroupPostfix'))]",
+      "properties": {
+        "expressionEvaluationOptions": {
+          "scope": "inner"
+        },
+        "mode": "Incremental",
+        "parameters": {
+          "hostPoolType": {
+            "value": "[parameters('scalehostPoolType')]"
+          },
+          "location": {
+            "value": "[parameters('scalelocation')]"
+          },
+          "scalingPlanName": {
+            "value": "[parameters('scalescalingPlanName')]"
+          },
+          "schedules": {
+            "value": "[parameters('scaleschedules')]"
+          },
+          "timeZone": {
+            "value": "[parameters('scaletimeZone')]"
+          },
+          "hostpoolReferences": {
+            "value": [
+              {
+                "hostpoolArmPath": "[reference(format('AVDbackplanedeploy[{0}]', 0)).outputs.hpid.value]",
+                "scalingPlanEnabled": true
+              },
+              {
+                "hostpoolArmPath": "[reference(format('AVDbackplanedeploy[{0}]', 0)).outputs.hpraid.value]",
+                "scalingPlanEnabled": true
+              },
+              {
+                "hostpoolArmPath": "[reference(format('AVDbackplanedeploy[{0}]', 1)).outputs.hpid.value]",
+                "scalingPlanEnabled": true
+              },
+              {
+                "hostpoolArmPath": "[reference(format('AVDbackplanedeploy[{0}]', 1)).outputs.hpraid.value]",
+                "scalingPlanEnabled": true
+              }
+            ]
+          }
+        },
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
+          "contentVersion": "1.0.0.0",
+          "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental and should be enabled for testing purposes only. Do not enable these settings for any production usage, or you may be unexpectedly broken at any time!",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Extensibility",
+              "MicrosoftGraph Preview"
+            ],
+            "_generator": {
+              "name": "bicep",
+              "version": "0.21.1.54444",
+              "templateHash": "3843773975602423511"
+            }
+          },
+          "parameters": {
+            "scalingPlanName": {
+              "type": "string"
+            },
+            "scalingPlanDescription": {
+              "type": "string",
+              "defaultValue": ""
+            },
+            "location": {
+              "type": "string"
+            },
+            "friendlyName": {
+              "type": "string",
+              "defaultValue": ""
+            },
+            "hostPoolType": {
+              "type": "string",
+              "allowedValues": [
+                "Pooled",
+                "Personal"
+              ]
+            },
+            "timeZone": {
+              "type": "string"
+            },
+            "schedules": {
+              "type": "array"
+            },
+            "hostpoolReferences": {
+              "type": "array",
+              "defaultValue": []
+            },
+            "exclusionTag": {
+              "type": "string",
+              "defaultValue": ""
+            },
+            "tags": {
+              "type": "object",
+              "defaultValue": {}
+            }
+          },
+          "resources": {
+            "sp": {
+              "type": "Microsoft.DesktopVirtualization/scalingPlans",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[parameters('scalingPlanName')]",
+              "location": "[parameters('location')]",
+              "tags": "[parameters('tags')]",
+              "properties": {
+                "friendlyName": "[parameters('friendlyName')]",
+                "description": "[parameters('scalingPlanDescription')]",
+                "hostPoolType": "[parameters('hostPoolType')]",
+                "timeZone": "[parameters('timeZone')]",
+                "exclusionTag": "[parameters('exclusionTag')]",
+                "schedules": null,
+                "hostPoolReferences": "[parameters('hostpoolReferences')]"
+              }
+            },
+            "sps1": {
+              "copy": {
+                "name": "sps1",
+                "count": "[length(parameters('schedules'))]"
+              },
+              "condition": "[equals(parameters('hostPoolType'), 'Pooled')]",
+              "type": "Microsoft.DesktopVirtualization/scalingPlans/pooledSchedules",
+              "apiVersion": "2022-10-14-preview",
+              "name": "[format('{0}/{1}', parameters('scalingPlanName'), format('{0}', parameters('schedules')[copyIndex()].name))]",
+              "properties": "[parameters('schedules')[copyIndex()]]",
+              "dependsOn": [
+                "sp"
+              ]
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[format('AVDbackplanedeploy[{0}]', 1)]",
+        "[format('AVDbackplanedeploy[{0}]', 0)]",
+        "[format('AVDbackplanedeploy[{0}]', 1)]",
+        "[format('AVDbackplanedeploy[{0}]', 0)]",
+        "rgsp"
+      ]
+    }
+  }
+}

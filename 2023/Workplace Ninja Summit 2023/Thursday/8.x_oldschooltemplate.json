@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.4.577.32449",
+      "templateHash": "16145579273185764566"
+    }
+  },
+  "parameters": {
+    "storageAccountName": {
+      "type": "string",
+      "defaultValue": "AVD"
+    },
+    "storageAccountLocation": {
+      "type": "string",
+      "defaultValue": "westeurope",
+      "allowedValues": [
+        "westeurope",
+        "northeurope"
+      ]
+    },
+    "securePassword": {
+      "type": "secureString"
+    }
+  },
+  "functions": [],
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2021-04-01",
+      "name": "[parameters('storageAccountName')]",
+      "location": "[parameters('storageAccountLocation')]",
+      "kind": "StorageV2",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "properties": {
+        "accessTier": "Cool"
+      }
+    }
+  ],
+  "outputs": {
+    "stgout": {
+      "type": "string",
+      "value": "[reference(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))).primaryEndpoints.blob]"
+    }
+  }
+}
