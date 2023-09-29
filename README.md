@@ -7,7 +7,9 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 ##  List of speaking engagements
 📅 2023
-- Azure Greg live stream, Online [🎥 <a href = "https://www.youtube.com/live/E-j022nCRFM?feature=share&t=8">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2007%20-%20Azure%20Greg%20Live%20Stream%20-%20Cool%20new%20Bicep%20features.pdf"> Slides</a>] 
+- Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/Workplace%20Ninja%20Summit%202023/Using%20Bicep%20for%20your%20Azure%20Virtual%20Desktop%20deployments%20-%20StarterKit.pdf"> Slides Session 1</a>]
+  Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/Workplace%20Ninja%20Summit%202023/Using%20Bicep%20for%20your%20Azure%20Virtual%20Desktop%20deployments%20-%20Masterclass.pdf"> Slides Session 2</a>]
+ - Azure Greg live stream, Online [🎥 <a href = "https://www.youtube.com/live/E-j022nCRFM?feature=share&t=8">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2007%20-%20Azure%20Greg%20Live%20Stream%20-%20Cool%20new%20Bicep%20features.pdf"> Slides</a>] 
 - Cloud Community Nights event, Netherlands [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2002%20-%20Infrastructure%20as%20Code%20with%20Bicep%20on%20tour!.pdf"> Slides</a>] 
 - Azure User Group Sweden, Online [🎥 <a href = "https://www.youtube.com/watch?v=qHcZ7RGB1M4">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2001%20-%20Azure%20User%20Group%20Sweden%20-%20Infrastructure%20as%20Code%20with%20Bicep%20on%20tour!.pdf"> Slides</a>] 
 
