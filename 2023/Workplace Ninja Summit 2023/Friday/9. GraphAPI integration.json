@@ -1,0 +1,27 @@
+//https://github.com/microsoftgraph/msgraph-bicep-types
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "languageVersion": "1.10-experimental",
+    "contentVersion": "1.0.0.0",
+    "metadata": {
+        "_generartor": {
+            "name": "Bicep"
+        }
+    },
+    "imports": {
+        "graph": {
+            "provider": "MicrosoftGraph",
+            "version": "1.0.0"
+        }
+    },
+    "resources": {
+        "MyApplication": {
+            "import": "graph",
+            "type": "Microsoft.Graph/applications@2023-06-15-preview",
+            "properties": {
+                "name": "FreekApp",
+                "displayName": "Deployed by IaC!"
+            }
+        }
+    }
+}

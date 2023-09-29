@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "azureSubscriptionID": {
+      "value": "6bee0596-7a91-4171-8e59-5c1af6dc65ed"
+    },
+    "azureADTenantID": {
+      "value": "0eed44be-63ca-479f-8504-419866a3e2ae"
+    },
+    "adminObjectID": {
+      "value": "4241244b-f1a5-4800-8364-280e44e9c657"
+    },
+    "principalID": {
+      "value": "4241244b-f1a5-4800-8364-280e44e9c657"
+    },
+    "adminPassword": {
+      "value": "XKCXSg-DvawufS_rZrk1"
+    },
+    "secretValueDomainJoin": {
+      "value": "aKDUbRWu_OdYDfZ9-ypV"
+    },
+    "secretValueLocalAdminPassword": {
+      "value": "ltSQBVh_ZjJvAKV-ryko"
+    }
+  }
+}

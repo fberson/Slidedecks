@@ -1,0 +1,78 @@
+{
+  "analyzers": {
+    "core": {
+      "enabled": true,
+      "verbose": false,
+      "rules": {
+        "adminusername-should-not-be-literal": {
+          "level": "warning"
+        },
+        "no-hardcoded-env-urls": {
+          "level": "warning"
+        },
+        "no-unnecessary-dependson": {
+          "level": "warning"
+        },
+        "no-unused-params": {
+          "level": "warning"
+        },
+        "no-unused-vars": {
+          "level": "warning"
+        },
+        "outputs-should-not-contain-secrets": {
+          "level": "warning"
+        },
+        "prefer-interpolation": {
+          "level": "warning"
+        },
+        "secure-parameter-default": {
+          "level": "error"
+        },
+        "simplify-interpolation": {
+          "level": "warning"
+        },
+        "no-loc-expr-outside-params": {
+          "level": "off"
+        },
+        "use-stable-vm-image": {
+          "level": "warning"
+        },
+        "use-recent-api-versions":{
+          "level": "warning",
+          "maxAllowedAgeInDays": 730
+        }
+      }
+    }
+  },
+  "moduleAliases": {
+    "br": {
+      "CoreModules": {
+        "registry": "acrdemofreek.azurecr.io",
+        "modulePath": "bicep/modules"
+      }
+    }
+  },
+  "cloud": {
+    "currentProfile": "AzureCloud",
+    "credentialPrecedence": [
+      "AzureCLI",
+      "AzurePowerShell"
+    ]
+  },
+  "experimentalFeaturesEnabled": {
+    "imports": true,
+    "userDefineTypes": true,
+    "pas": true,
+    "paramsFiles": true,
+    "prettyPrinting": true,
+    "testFramework": true,
+    "assertions": true
+  },
+  "formatting": {
+    "width": 80,
+    "newlineKind": "LF",
+    "identKind": "Space",
+    "indentSize": 2,
+    "insertFinalNewLine": true
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.20.4.51522",
+      "templateHash": "5196565399776869185"
+    }
+  },
+  "parameters": {
+    "hostpoolName": {
+      "type": "string"
+    },
+    "hostpoolFriendlyName": {
+      "type": "string"
+    },
+    "appgroupName": {
+      "type": "string"
+    },
+    "appgroupDesktopFriendlyName": {
+      "type": "string"
+    },
+    "appgroupRemoteAppFriendlyName": {
+      "type": "string"
+    },
+    "workspaceName": {
+      "type": "string"
+    },
+    "workspaceNameFriendlyName": {
+      "type": "string"
+    },
+    "preferredAppGroupType": {
+      "type": "string",
+      "defaultValue": "Desktop"
+    },
+    "AVDbackplanelocation": {
+      "type": "string",
+      "defaultValue": "eastus"
+    },
+    "hostPoolType": {
+      "type": "string",
+      "defaultValue": "pooled"
+    },
+    "loadBalancerType": {
+      "type": "string",
+      "defaultValue": "BreadthFirst"
+    },
+    "enableValiatioMode": {
+      "type": "bool"
+    },
+    "createRemoteAppHostpool": {
+      "type": "bool"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.DesktopVirtualization/hostPools",
+      "apiVersion": "2019-12-10-preview",
+      "name": "[parameters('hostpoolName')]",
+      "location": "[parameters('AVDbackplanelocation')]",
+      "properties": {
+        "friendlyName": "[parameters('hostpoolFriendlyName')]",
+        "hostPoolType": "[parameters('hostPoolType')]",
+        "loadBalancerType": "[parameters('loadBalancerType')]",
+        "preferredAppGroupType": "[parameters('preferredAppGroupType')]",
+        "validationEnvironment": "[parameters('enableValiatioMode')]"
+      }
+    },
+    {
+      "type": "Microsoft.DesktopVirtualization/applicationGroups",
+      "apiVersion": "2022-10-14-preview",
+      "name": "[parameters('appgroupName')]",
+      "location": "[parameters('AVDbackplanelocation')]",
+      "properties": {
+        "friendlyName": "[parameters('appgroupDesktopFriendlyName')]",
+        "applicationGroupType": "Desktop",
+        "hostPoolArmPath": "[resourceId('Microsoft.DesktopVirtualization/hostPools', parameters('hostpoolName'))]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DesktopVirtualization/hostPools', parameters('hostpoolName'))]"
+      ]
+    },
+    {
+      "condition": "[parameters('createRemoteAppHostpool')]",
+      "type": "Microsoft.DesktopVirtualization/hostPools",
+      "apiVersion": "2022-10-14-preview",
+      "name": "[format('{0}-REMOTEAPP', parameters('hostpoolName'))]",
+      "location": "[parameters('AVDbackplanelocation')]",
+      "properties": {
+        "friendlyName": "[parameters('hostpoolFriendlyName')]",
+        "hostPoolType": "[parameters('hostPoolType')]",
+        "loadBalancerType": "[parameters('loadBalancerType')]",
+        "preferredAppGroupType": "RailApplications",
+        "validationEnvironment": "[parameters('enableValiatioMode')]"
+      }
+    },
+    {
+      "condition": "[parameters('createRemoteAppHostpool')]",
+      "type": "Microsoft.DesktopVirtualization/applicationGroups",
+      "apiVersion": "2022-10-14-preview",
+      "name": "[format('{0}-REMOTEAPP', parameters('appgroupName'))]",
+      "location": "[parameters('AVDbackplanelocation')]",
+      "properties": {
+        "friendlyName": "[parameters('appgroupRemoteAppFriendlyName')]",
+        "applicationGroupType": "RemoteApp",
+        "hostPoolArmPath": "[resourceId('Microsoft.DesktopVirtualization/hostPools', format('{0}-REMOTEAPP', parameters('hostpoolName')))]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DesktopVirtualization/hostPools', format('{0}-REMOTEAPP', parameters('hostpoolName')))]"
+      ]
+    },
+    {
+      "type": "Microsoft.DesktopVirtualization/workspaces",
+      "apiVersion": "2022-10-14-preview",
+      "name": "[parameters('workspaceName')]",
+      "location": "[parameters('AVDbackplanelocation')]",
+      "properties": {
+        "friendlyName": "[parameters('workspaceNameFriendlyName')]",
+        "applicationGroupReferences": [
+          "[resourceId('Microsoft.DesktopVirtualization/applicationGroups', parameters('appgroupName'))]",
+          "[if(parameters('createRemoteAppHostpool'), resourceId('Microsoft.DesktopVirtualization/applicationGroups', format('{0}-REMOTEAPP', parameters('appgroupName'))), '')]"
+        ]
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.DesktopVirtualization/applicationGroups', parameters('appgroupName'))]",
+        "[resourceId('Microsoft.DesktopVirtualization/applicationGroups', format('{0}-REMOTEAPP', parameters('appgroupName')))]"
+      ]
+    }
+  ]
+}
