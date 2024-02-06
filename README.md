@@ -8,9 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2024
-- Cloud 8 Virtual Summit [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf"> Slides Session 1</a>]
-📅 2023
-- International Association of Microsoft Channel Partners. (IAMCP) [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2011%20-%20Bicep%20IaC%20for%20Azure.pdf"> Slides Session 1</a>]
+- Cloud 8 Virtual Summit [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf"> Slides</a>]
 📅 2023
 - International Association of Microsoft Channel Partners. (IAMCP) [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2011%20-%20Bicep%20IaC%20for%20Azure.pdf"> Slides Session 1</a>]
 - Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/Workplace%20Ninja%20Summit%202023/Using%20Bicep%20for%20your%20Azure%20Virtual%20Desktop%20deployments%20-%20StarterKit.pdf"> Slides Session 1</a>]
