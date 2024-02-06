@@ -6,6 +6,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 ##  List of speaking engagements
+
 📅 2024
 - Cloud 8 Virtual Summit [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf"> Slides Session 1</a>]
 📅 2023
