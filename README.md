@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2024
-- MC2MC, Belgium <font color="orange"> (coming soon!) </font>
+- MC2MC, Belgium   <span style="color: #FF69B4;">(coming soon!) </span>
 - Warsaw IT Days <font color="orange"> (coming soon!) </font>
 - Cloud 8 Virtual Summit [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf"> Slides</a>] [🎥 <a href = "https://www.youtube.com/watch?v=_8pqsUXif9o">On Demand</a>]
 
