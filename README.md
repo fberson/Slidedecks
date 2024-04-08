@@ -11,10 +11,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 - Worksplace Ninja Summit Switzerland (coming soon)
 - MC2MC, Belgium (coming soon)- 
 - Warsaw IT Days [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf](https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2004%20-%20Mastering%20Bicep%20-%20Infrasstructure%20as%20Code%20for%20Azure.pdf)"> Slides</a>] [🎥 <a href = "[https://www.youtube.com/watch?v=_8pqsUXif9o](https://warszawskiedniinformatyki.pl/conference/en/)">On Demand</a>]
-
 - Cloud 8 Virtual Summit [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2001%20-%20Mastering%20Bicep%20-%20Infrastructure%20as%20Code%20for%20Azure.pdf"> Slides</a>] [🎥 <a href = "https://www.youtube.com/watch?v=_8pqsUXif9o">On Demand</a>]
-
-https://warszawskiedniinformatyki.pl/conference/en/
 
 📅 2023
 - International Association of Microsoft Channel Partners. (IAMCP) [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2023/2023%20-%2011%20-%20Bicep%20IaC%20for%20Azure.pdf"> Slides</a>]
