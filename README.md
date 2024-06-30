@@ -2,7 +2,7 @@
 This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (AVD), Remote Desktop Services (RDS), Bicep and ARM Templates and much more!
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
-<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/freekberson.jpg">
+<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/freekberson.jpg" width=300>
 
 ##  List of speaking engagements
 
