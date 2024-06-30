@@ -1,5 +1,4 @@
 #  Slide decks and video recordings of my speaking engagements
-<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/fb-intro-photo.jpg" width=300>
 This repository contains a subset of the slide decks I used while presenting 🎥 (and co-presenting with community friends) at various in-person around the world 🌎, online conferences, user groups and webinars. Topics discussed in these sessions are Azure Virtual Desktop (AVD), Remote Desktop Services (RDS), Bicep and ARM Templates and much more!
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
@@ -94,6 +93,8 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2015
 - Bri-Forum, London
+
+<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/fb-intro-photo.jpg" width=300>
 
 📅 2014
 - Experts 2 Experts Virtualization Conference, Brussels
