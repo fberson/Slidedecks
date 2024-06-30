@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2024
 - End User Computing User Group, Sweden (coming soon)
-- Experts 2 Experts Virtualization Conference, Barcelona ([a href = "https://app.emarketeer.com/ext/webpage/show.php?p=861476a5513d5afe47285cdf6f13191951deabf"coming soon</a>)
+- Experts 2 Experts Virtualization Conference, Barcelona (<a href = "https://app.emarketeer.com/ext/webpage/show.php?p=861476a5513d5afe47285cdf6f13191951deabf">coming soon</a>)
 - Workplace Ninja Summit Switzerland (coming soon)
 - MC2MC, Antwerp [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2006%20-%20Navigating%20new%20Galaxies%20with%20Bicep%20Infrastructure%20as%20Code%20advanced%20topics.pdf"> Slides</a>] 
 - Microsoft Build, Seattle  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/Optimize%20Azure%20Infrastructure%20as%20Code%20Deployments%20with%20VS%20Code.pdf"> Slides</a>] 
