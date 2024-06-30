@@ -3,6 +3,7 @@ This repository contains a subset of the slide decks I used while presenting ðŸŽ
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
 <img align="right" src="https://github.com/fberson/Slidedecks/blob/main/freekberson.jpg" width=300>
+<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/fb-intro-photo.jpg" width=300>
 
 ##  List of speaking engagements
 
