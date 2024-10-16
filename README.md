@@ -8,6 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2024
 - End User Computing User Group, Sweden (<a href = "https://app.emarketeer.com/ext/webpage/show.php?p=861476a5513d5afe47285cdf6f13191951deabf">coming soon</a>)
+- Microsoft Ignite, Chicago (<a href = "https://ignite.microsoft.com/en-US/sessions/THRFP717">coming soon</a>)
 - NIC Empower conference, Oslo (<a href = "https://www.nicconf.com/">coming soon</a>)
 - Experts 2 Experts Virtualization Conference, Barcelona (<a href = "https://e2evc.com/e2evc-home-page#23b3f8c8-3776-4a62-894f-954470a2ae8f">coming soon</a>)
 - Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/Workplace%20Ninja%20Summit%202024/2024%20-%2009%20-%20Attached%20to%20traditional%20golden%20images%20for%20AVD%20Get%20attached%20to%20something%20different.pdf"> Slides Session 1</a>]
