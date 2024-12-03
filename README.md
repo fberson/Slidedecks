@@ -7,7 +7,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2024
-- End User Computing User Group, Sweden (<a href = "https://app.emarketeer.com/ext/webpage/show.php?p=861476a5513d5afe47285cdf6f13191951deabf">coming soon</a>)
+- End User Computing User Group, Sweden [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2012%20-%20Flexing%20your%20muscles%20with%20Parallels%20RAS%20and%20Bicep.pdf"> Slides Session</a>]
 - Microsoft Ignite, Chicago [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Optimize%20Azure%20Infrastructure%20as%20Code%20Deployments%20with%20VS%20Code.pdf"> Slides Session</a>]
 - NIC Empower conference, Oslo  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Optimize%20Azure%20Infrastructure%20as%20Code%20Deployments%20with%20VS%20Code.pdf"> Slides Session</a>]
 - Experts 2 Experts Virtualization Conference, Barcelona  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Flexing%20your%20muscles%20with%20Parallels%20RAS%20and%20Bicep.pdf"> Slides Session</a>]
