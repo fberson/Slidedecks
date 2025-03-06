@@ -8,6 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2025
 - Experts 2 Experts Virtualization Conference, Amsterdam (coming up!)
+- Warsaw IT Days, online (coming up!)
 - Azure User Group Iceland, online (coming up!)
 - Experts Live 2024, Copenhagen [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2003%20-%20Supercharge%20Azure%20Infrastructure%20as%20Code%20with%20VS%20Code%20and%20GitHub%20Copilot.pdf"> Slides Session</a>]
 
