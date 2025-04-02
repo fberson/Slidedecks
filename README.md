@@ -15,7 +15,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2024
 - End User Computing User Group, Sweden [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2012%20-%20Flexing%20your%20EUC%20muscles%20with%20Bicep.pdf"> Slides Session</a>]
-- Microsoft Ignite, Chicago [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Optimize%20Azure%20Infrastructure%20as%20Code%20Deployments%20with%20VS%20Code.pdf"> Slides Session</a>]
+- Microsoft Ignite, Chicago [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Empower%20anywhere%20access%20to%20all%20apps%20in%20a%20hybrid%2C%20cloud%2C%20and%20AI%20world.pdf"> Slides Session</a>]
 - NIC Empower conference, Oslo  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Optimize%20Azure%20Infrastructure%20as%20Code%20Deployments%20with%20VS%20Code.pdf"> Slides Session</a>]
 - Experts 2 Experts Virtualization Conference, Barcelona  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/2024%20-%2011%20-%20Flexing%20your%20muscles%20with%20Parallels%20RAS%20and%20Bicep.pdf"> Slides Session</a>]
 - Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2024/Workplace%20Ninja%20Summit%202024/2024%20-%2009%20-%20Attached%20to%20traditional%20golden%20images%20for%20AVD%20Get%20attached%20to%20something%20different.pdf"> Slides Session 1</a>]
