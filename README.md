@@ -7,7 +7,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2025
-- Microsoft Build, Seattle (coming up! [🌍 <a href = "https://build.microsoft.com/en-US/sessions/DEM539"> Session catalog </a>
+- Microsoft Build, Seattle (coming up! [🌍 <a href = "https://build.microsoft.com/en-US/sessions/DEM539"> Session catalog available</a>}
 - Experts 2 Experts Virtualization Conference, Amsterdam (coming up!)
 - Warsaw IT Days, online (coming up!) [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2003%20-%20Supercharge%20Azure%20Infrastructure%20as%20Code%20with%20VS%20Code%20and%20GitHub%20Copilot%20-%20Warsaw.pdf
 "> Slides Session</a>]
