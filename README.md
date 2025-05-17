@@ -8,7 +8,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 📅 2025
 - Microsoft Build, Seattle (coming up! [🌍 <a href = "https://build.microsoft.com/en-US/sessions/DEM539"> Session catalog available</a>}
-- Experts 2 Experts Virtualization Conference, Amsterdam (coming up!)
+- Experts 2 Experts Virtualization Conference, Amsterdam session 1  [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2005%20-%20Azure%20Marketplace%20Where%20Dreams%20(and%20Debugging%20Nightmares)%20Come%20True.pdf"> Slides Session</a>]
 - Warsaw IT Days, online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2003%20-%20Supercharge%20Azure%20Infrastructure%20as%20Code%20with%20VS%20Code%20and%20GitHub%20Copilot%20-%20Warsaw.pdf
 "> Slides Session</a>]
 - Azure User Group Iceland, online (coming up!)
