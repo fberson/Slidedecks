@@ -4,7 +4,6 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 <img align="right" src="https://github.com/fberson/Slidedecks/blob/main/header.jpg" width=600>
-<img align="right" src="https://github.com/fberson/Slidedecks/blob/main/freekberson.jpg" width=300>
 
 ##  List of speaking engagements
 
