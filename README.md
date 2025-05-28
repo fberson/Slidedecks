@@ -4,7 +4,7 @@ This repository contains a subset of the slide decks I used while presenting ğŸ
 Feel free to reach out if you have questions in regards to these topics. Happy to connect!
 
 
-
+<br>
 ##  List of speaking engagements
 
 ğŸ“… 2025
