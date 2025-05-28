@@ -5,6 +5,8 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 
 
 <br>
+
+
 ##  List of speaking engagements
 
 📅 2025
