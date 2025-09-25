@@ -11,6 +11,7 @@ Feel free to reach out if you have questions in regards to these topics. Happy t
 ##  List of speaking engagements
 
 📅 2025
+- Azure User Group Iceland, Online (coming soon!)
 - Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2009%20-%20From%20Friction%20to%20Function%20What%20We%20Learned%20Growing%20AVD%20and%20Bicep.pdf"> Slides Session 1</a>]
 - Workplace Ninja Summit, Switzerland [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2009%20-%20Innovate%2C%20collaborate%2C%20and%20empower%20your%20AVD%20and%20W365%20deployments%20with%20Bicep.pdf"> Slides Session 2</a>] 
 - Microsoft Build, Seattle [🎥 <a href = "https://build.microsoft.com/en-US/sessions/DEM539">On Demand</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2025/2025%20-%2005%20-%20Optimize%20Your%20Infrastructure%20as%20Code%20with%20Bicep%20Modules%20-%20Build%20Once%20and%20Deploy%20Anywhere.pdf"> Slides Session</a>] 
