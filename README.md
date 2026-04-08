@@ -11,7 +11,8 @@ Feel free to reach out if you have questions regarding these topics. Happy to co
 ##  List of speaking engagements
 
 📅 2026
-- Global Azure Athens 2026 (coming soon!)
+- Microsoft Build 2026, San Francisco (coming soon!)
+- Global Azure 2026, Athens (coming soon!)
 - Warsaw IT Days, online (coming soon!)
 
 
