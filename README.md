@@ -13,7 +13,7 @@ Feel free to reach out if you have questions regarding these topics. Happy to co
 📅 2026
 - Microsoft Build 2026, San Francisco (coming soon!)
 - Global Azure 2026, Athens (coming soon!)
-- Warsaw IT Days, online (coming soon!)
+- Warsaw IT Days, online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/2026%20-%2003%20-%20Practical%20Ways%20to%20Improve%20Your%20Azure%20Deployments%20with%20Bicep.pdf"> Slides Session</a>]
 
 
 📅 2025
