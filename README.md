@@ -12,9 +12,8 @@ Feel free to reach out if you have questions regarding these topics. Happy to co
 
 📅 2026
 - Microsoft Build 2026, San Francisco (coming soon!)
-- Global Azure 2026, Athens (coming soon!)
+- Global Azure 2026, Athens [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/2026%20-%2004%20-%20Innovate%2C%20collaborate%2C%20and%20empower%20your%20Bicep%20Infrastructure%20as%20Code.pdf"> Slides Session</a>]
 - Warsaw IT Days, online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/2026%20-%2003%20-%20Practical%20Ways%20to%20Improve%20Your%20Azure%20Deployments%20with%20Bicep.pdf"> Slides Session</a>]
-
 
 📅 2025
 - Azure User Group Iceland, Online [🎥 <a href = "https://www.youtube.com/watch?v=bWnnXnqBz50">On Demand</a>]
