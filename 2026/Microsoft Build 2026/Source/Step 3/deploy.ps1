@@ -1,0 +1,1 @@
+bicep local-deploy main.bicepparam
