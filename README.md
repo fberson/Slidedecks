@@ -14,7 +14,7 @@ Feel free to reach out if you have questions regarding these topics. Happy to co
 📅 2026
 - Microsoft Build 2026, San Francisco [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/Microsoft%20Build%202026/2026%20-%2005%20-%20Deploying%20Infrastructure%20and%20Turning%20on%20the%20Light%20-%20Bicep%20Beyond%20Azure.pdf"> Slides Session 1</a>] [💾 <a href = "https://github.com/fberson/Slidedecks/tree/main/2026/Microsoft%20Build%202026/Source
 "> Source code Session 1</a>]
-
+- Microsoft Build 2026, San Francisco [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/Microsoft%20Build%202026/2026%20-%2006%20-%20From%20the%20field%20-%20Accelerate%20your%20Deployment%20for%20Azure%20Marketplace.pdf"> Slides Session 2</a>]
 - Global Azure 2026, Athens [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/2026%20-%2004%20-%20Innovate%2C%20collaborate%2C%20and%20empower%20your%20Bicep%20Infrastructure%20as%20Code.pdf"> Slides Session</a>]
 - Warsaw IT Days, online [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/2026%20-%2003%20-%20Practical%20Ways%20to%20Improve%20Your%20Azure%20Deployments%20with%20Bicep.pdf"> Slides Session</a>]
 
