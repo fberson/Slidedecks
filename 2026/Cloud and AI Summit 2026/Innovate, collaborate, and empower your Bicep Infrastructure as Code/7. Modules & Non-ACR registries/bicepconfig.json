@@ -1,0 +1,6 @@
+// bicepconfig.json
+{
+  "experimentalFeaturesEnabled": {
+    "ociEnabled": true
+  }
+}

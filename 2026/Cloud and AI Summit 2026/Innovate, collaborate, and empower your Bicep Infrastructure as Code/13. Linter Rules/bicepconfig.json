@@ -1,0 +1,146 @@
+{
+  "analyzers": {
+    "core": {
+      "enabled": true,
+      "verbose": false,
+      "rules": {
+        "admin-username-should-not-be-literal": {
+          "level": "warning"
+        },
+        "artifacts-parameters": {
+          "level": "warning"
+        },
+        "decompiler-cleanup": {
+          "level": "warning"
+        },
+        "explicit-values-for-loc-parameters": {
+          "level": "off"
+        },
+        "max-asserts": {
+          "level": "error"
+        },
+        "max-outputs": {
+          "level": "error"
+        },
+        "max-parameters": {
+          "level": "error"
+        },
+        "max-resources": {
+          "level": "error"
+        },
+        "max-variables": {
+          "level": "error"
+        },
+        "nested-deployment-template-scoping": {
+          "level": "error"
+        },
+        "no-conflicting-metadata": {
+          "level": "warning"
+        },
+        "no-deployments-resources": {
+          "level": "warning"
+        },
+        "no-explicit-any": {
+          "level": "warning"
+        },
+        "no-hardcoded-env-urls": {
+          "level": "warning"
+        },
+        "no-hardcoded-location": {
+          "level": "off"
+        },
+        "no-hardcoded-outputs": {
+          "level": "off"
+        },
+        "no-loc-expr-outside-params": {
+          "level": "off"
+        },
+        "no-module-name": {
+          "level": "off"
+        },
+        "no-unnecessary-dependson": {
+          "level": "warning"
+        },
+        "no-unused-existing-resources": {
+          "level": "warning"
+        },
+        "no-unused-imports": {
+          "level": "warning"
+        },
+        "no-unused-params": {
+          "level": "warning"
+        },
+        "no-unused-types": {
+          "level": "warning"
+        },
+        "no-unused-vars": {
+          "level": "warning"
+        },
+        "outputs-should-not-contain-secrets": {
+          "level": "error"
+        },
+        "prefer-interpolation": {
+          "level": "warning"
+        },
+        "prefer-unquoted-property-names": {
+          "level": "warning"
+        },
+        //example
+        "secure-parameter-default": {
+          "level": "warning"
+        },
+        "secure-params-in-parameters-file": {
+          "level": "warning"
+        },
+        "secure-secrets-in-params": {
+          "level": "warning"
+        },
+        "simplify-interpolation": {
+          "level": "warning"
+        },
+        "simplify-json-null": {
+          "level": "warning"
+        },
+        "use-parent-property": {
+          "level": "warning"
+        },
+        "use-recent-api-versions": {
+          "level": "off"
+        },
+        "use-recent-az-powershell-version": {
+          "level": "warning"
+        },
+        "use-recent-module-versions": {
+          "level": "off"
+        },
+        "use-recognized-resource-type": {
+          "level": "warning"
+        },
+        "use-resource-id-functions": {
+          "level": "off"
+        },
+        "use-resource-symbol-reference": {
+          "level": "warning"
+        },
+        "use-safe-access": {
+          "level": "warning"
+        },
+        "use-secure-value-for-secure-inputs": {
+          "level": "warning"
+        },
+        "use-stable-resource-identifiers": {
+          "level": "warning"
+        },
+        "use-stable-vm-image": {
+          "level": "warning"
+        },
+        "use-user-defined-types": {
+          "level": "off"
+        },
+        "what-if-short-circuiting": {
+          "level": "off"
+        }
+      }
+    }
+  }
+}

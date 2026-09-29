@@ -1,0 +1,84 @@
+{
+  "analyzers": {
+    "core": {
+      "enabled": true,
+      "verbose": false,
+      "rules": {
+        "admin-username-should-not-be-literal": {
+          "level": "warning"
+        },
+        "no-hardcoded-env-urls": {
+          "level": "warning"
+        },
+        "no-unnecessary-dependson": {
+          "level": "warning"
+        },
+        "no-unused-params": {
+          "level": "warning"
+        },
+        "no-unused-vars": {
+          "level": "warning"
+        },
+        "outputs-should-not-contain-secrets": {
+          "level": "warning"
+        },
+        "prefer-interpolation": {
+          "level": "warning"
+        },
+        "secure-parameter-default": {
+          "level": "warning"
+        },
+        "simplify-interpolation": {
+          "level": "warning"
+        },
+        "no-loc-expr-outside-params": {
+          "level": "off"
+        },
+        "use-stable-vm-image": {
+          "level": "warning"
+        },
+        "use-recent-api-versions":{
+          "level": "warning",
+          "maxAllowedAgeInDays": 730
+        },
+        "no-unused-imports": {
+          "level": "warning"
+        },
+        "secure-secrets-in-params": {
+          "level": "warning"
+        }
+      }
+    }
+  },
+  "cloud": {
+    "currentProfile": "AzureCloud",
+    "credentialPrecedence": [
+      "AzureCLI",
+      "AzurePowerShell"
+    ]
+  },
+  "experimentalFeaturesEnabled": {
+    "imports": true,
+    "userDefinedTypes": true,
+    "paramsFiles": true,
+    "prettyPrinting": true,
+    "extensibility": true,
+    "onlyIfNotExists": true,
+    "resourceDerivedTypes": true,
+    "userDefinedConstraints": true
+  },
+  "formatting": {
+    "width": 120,
+    "newlineKind": "LF",
+    "identKind": "Space",
+    "indentSize": 2,
+    "insertFinalNewLine": true
+  },
+  "extensions": {
+    "microsoftGraphPreBeta": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:0.1.9-preview",
+    "microsoftGraphBeta": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/beta:0.1.8-preview",
+    "microsoftGraphV10": "br:mcr.microsoft.com/bicep/extensions/microsoftgraph/v1.0:0.1.8-preview"
+  }
+}
+
+

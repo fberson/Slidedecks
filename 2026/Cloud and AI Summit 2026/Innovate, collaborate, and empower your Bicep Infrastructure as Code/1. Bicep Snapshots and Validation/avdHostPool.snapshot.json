@@ -1,0 +1,44 @@
+{
+  "predictedResources": [
+    {
+      "id": "/subscriptions/2955960d-6878-4216-9ef6-c7a0d157fa20/resourceGroups/BicepDemoSnapshots/providers/Microsoft.DesktopVirtualization/hostPools/BICEP-P-AVD-HP-REMOTEAPP",
+      "type": "Microsoft.DesktopVirtualization/hostPools",
+      "name": "BICEP-P-AVD-HP-REMOTEAPP",
+      "apiVersion": "2026-01-01-preview",
+      "location": "westeurope",
+      "properties": {
+        "hostPoolType": "pooled",
+        "loadBalancerType": "DepthFirst",
+        "preferredAppGroupType": "Desktop",
+        "validationEnvironment": true,
+        "friendlyName": "Friendlyname",
+        "maxSessionLimit": 1
+      }
+    },
+    {
+      "id": "/subscriptions/2955960d-6878-4216-9ef6-c7a0d157fa20/resourceGroups/BicepDemoSnapshots/providers/Microsoft.DesktopVirtualization/applicationGroups/BICEP-P-AVD-HP-AG",
+      "type": "Microsoft.DesktopVirtualization/applicationGroups",
+      "name": "BICEP-P-AVD-HP-AG",
+      "apiVersion": "2026-01-01-preview",
+      "location": "westeurope",
+      "properties": {
+        "hostPoolArmPath": "/subscriptions/2955960d-6878-4216-9ef6-c7a0d157fa20/resourceGroups/BicepDemoSnapshots/providers/Microsoft.DesktopVirtualization/hostPools/BICEP-P-AVD-HP-REMOTEAPP",
+        "applicationGroupType": "Desktop"
+      }
+    },
+    {
+      "id": "/subscriptions/2955960d-6878-4216-9ef6-c7a0d157fa20/resourceGroups/BicepDemoSnapshots/providers/Microsoft.DesktopVirtualization/workspaces/BICEP-P-AVD-HP-WS",
+      "type": "Microsoft.DesktopVirtualization/workspaces",
+      "name": "BICEP-P-AVD-HP-WS",
+      "apiVersion": "2026-01-01-preview",
+      "location": "westeurope",
+      "properties": {
+        "applicationGroupReferences": [
+          "/subscriptions/2955960d-6878-4216-9ef6-c7a0d157fa20/resourceGroups/BicepDemoSnapshots/providers/Microsoft.DesktopVirtualization/applicationGroups/BICEP-P-AVD-HP-AG"
+        ]
+      }
+    }
+  ],
+  "diagnostics": [],
+  "outputs": {}
+}
