@@ -12,6 +12,7 @@ Feel free to reach out if you have questions regarding these topics. Happy to co
 
 
 📅 2026
+- CollabDays Greece 2026 (Coming soon!🔔) 
 - AZ-Security Podcast (Coming soon!🔔)
 - The Cloud & AI Summit 2026, St. Louis [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/Cloud%20and%20AI%20Summit%202026/Innovate%2C%20collaborate%2C%20and%20empower%20your%20Bicep%20Infrastructure%20as%20Code/2026%20-%2009%20-%20From%20the%20flied%20-%20Accelerate%20your%20Deployment%20for%20Azure%20Marketplace.pdf"> Session 1</a>]
 - The Cloud & AI Summit 2026, St. Louis [💾 <a href = "https://github.com/fberson/Slidedecks/blob/main/2026/Cloud%20and%20AI%20Summit%202026/From%20the%20Field%20Accelerate%20Your%20Development%20for%20Azure%20Marketplace/2026%20-%2009%20-%20From%20the%20flied%20-%20Accelerate%20your%20Deployment%20for%20Azure%20Marketplace.pdf"> Session 2</a>] 
